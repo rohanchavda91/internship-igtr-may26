@@ -46,3 +46,29 @@ Exam - 5 different tasks
 ## May 27, 2026
 
 Photoshop ma total 5 collages bnavvana kidha ane ek simple evu drawing i.e. Ghar bnavvanu kidhu!
+
+## May 28, 2026 
+# Holiday - Barkid
+
+## May 29, 2026
+
+Task - Make a CV in HTML with applying styles and photo should contain creative design which is familiar to HTML
+
+## May 30, 2026
+
+Continuation of CV
+
+## May 31, 2026
+# Sunday
+
+## 1st June, 2026
+
+CSS sharu karyu... According to W3Schools course, CSSBox Model sudhi karaavyu.
+
+## 2nd June, 2026
+
+Ardhu CSS Khatam
+Tasks - Image and 5 positions which's inside the image, 
+    Top - Left, Right
+    Bottom - Left Right
+    Centre.
