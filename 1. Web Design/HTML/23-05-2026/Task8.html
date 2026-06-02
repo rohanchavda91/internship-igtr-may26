@@ -1,0 +1,51 @@
+<!-- Form-8: Job Application Registration -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <style>
+        * {
+            font-family: 'Roboto', 'Calibri', Sans-serif;
+        }
+        fieldset{
+            width: 400px;
+            padding:20px;
+            background-color: #72b6f3;
+        }
+        form{
+            background-color: #bfddf7;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1> Job Application Registration </h1>
+        <form>
+            <label for="name">Full Name:</label> <br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email Address: </label> <br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone Number: </label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <Label for="resume">Resume (PDF/DOCX):</Label>
+            <input type="file" id="resume" name="resume" accept=".pdf, .docx" style="background-color:white; padding:5px;"><br><br>
+
+            <label for="position">Position Applying For:</label>
+            <select id="position" name="position">
+                <option value="">--Select--</option>
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Product Manager">Product Manager</option>
+            </select>
+        </form>
+    </fieldset>
+</body>
+</html>

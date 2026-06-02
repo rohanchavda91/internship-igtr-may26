@@ -1,0 +1,74 @@
+<!-- Form from the given image -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            font-family: 'roboto', sans-serif;
+            color: #716d6d;
+        }
+
+        input {
+            border: 2px solid black;
+            width: 80%;
+            padding: 10px;
+        }
+
+        div {
+            width: 400px;
+            margin: auto;
+            display: block;
+            padding: 40px;
+            border:#357c38 2px solid;
+        }
+
+        h2 {
+            color: #357c38;
+        }
+
+        .sbmt {
+            background-color: #357c38;
+            color: white;
+            width: 80%;
+            padding: 10px;
+            border-radius: px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+            <h2>Registration Form</h2>
+            <br>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <label for="rpwd">Repeat Password:</label><br>
+            <input type="password" id="rpwd" name="rpwd"><br><br>
+            <label for="cont">Contact:</label><br>
+            <input type="tel" id="cont" name="cont"><br><br>
+            <label for="g">Gender:</label><br>
+            <select id="g" name="g" style="width: 80%; padding: 10px;">
+                <option value="">-- Select --</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <input type="submit" value="Submit" class="sbmt">
+        </form>
+    </div>
+</body>
+
+</html>

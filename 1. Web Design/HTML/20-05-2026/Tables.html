@@ -1,0 +1,337 @@
+<!-- Task 1-8: Create Tables -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tasks</title>
+    <style>
+        th,
+        td {
+            padding: 10px;
+        }
+
+        .col1 {
+            background-color: rgb(168, 166, 166);
+        }
+
+        .col2 {
+            text-align: right;
+        }
+
+        .root {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .table1 {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        .table5 {
+            border-collapse: collapse;
+            border: 2px solid rgb(206, 110, 0);
+        }
+
+        .table5 th,
+        .table5 td {
+            border: 2px solid rgb(206, 110, 0);
+        }
+
+        .table6 {
+            background-color: oldlace;
+            border-collapse: collapse;
+            border: 2px solid rgb(0, 102, 204);
+        }
+
+        .table6 th,
+        .table6 td {
+            border: 2px solid rgb(0, 102, 204);
+            align-items: center;
+            text-align: center;
+        }
+
+        .table6 #sub {
+            text-align: left;
+        }
+
+        .table6 button {
+            background-color: red;
+            border: none;
+            height: 30px;
+            width: auto;
+            border-radius: 50%;
+            cursor: not-allowed;
+        }
+        .table7{
+            border-collapse: collapse;
+            border: 3px solid black;
+        }
+        .table7 tr,.table7 th,.table7 td{
+            border: 3px solid black;
+            align-items: center;
+            text-align: center;
+        }
+        #flag{
+            font-family:'Noto color emoji',sans-serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body class="root">
+    <h1> Table - 1 : Table with Different Color and Alignment</h1>
+    <table class="table1" border="1px" width="300px">
+        <tr style="background-color: grey;">
+            <th>Person</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td class="col1">Rohan</td>
+            <td class="col2">19</td>
+        </tr>
+        <tr>
+            <td class="col1">Shital</td>
+            <td class="col2">20</td>
+        </tr>
+        <tr>
+            <td class="col1">Jemin</td>
+            <td class="col2">21</td>
+        </tr>
+        <tr>
+            <td class="col1">Vikesh</td>
+            <td class="col2">20</td>
+        </tr>
+    </table>
+    <br>
+    <hr><br>
+    <h1>Table - 2: Table with Collapsed Borders</h1>
+    <table border="1" cellspace="0" width="400px" style="border-collapse:collapse;">
+        <tr>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Founder Microsoft</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Elon Musk</td>
+            <td>CEO Tesla</td>
+            <td>$2000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Jeff Bezos</td>
+            <td>Founder Amazon</td>
+            <td>$3000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mark Zuckerberg</td>
+            <td>CEO Facebook</td>
+            <td>$4000</td>
+        </tr>
+    </table>
+    <br>
+    <hr><br>
+    <h1>Table - 3: Table with Uncollapsed Borders</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Job Title</th>
+            <th>Email Address</th>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>Intern</td>
+            <td><a href="mailto:rohanchavda91@gmail.com">rohanchavda91@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td>Shital</td>
+            <td>Designer</td>
+            <td><a href="mailto:shitalchavda958@gmail.com">shitalchavda@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td>Vikesh</td>
+            <td>Manager</td>
+            <td><a href="mailto:vikesh@gmail.com">vikesh@gmail.com</a></td>
+        </tr>
+    </table>
+    <br>
+    <hr><br>
+    <h1>Table - 4: Table with Header and Background Color</h1>
+    <table border="2px" style="background-color: orange; border-collapse:collapse;">
+        <tr style="background-color: rgb(206, 110, 0);">
+            <th>Name</th>
+            <th>Job Title</th>
+            <th>Email Address</th>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>Intern</td>
+            <td><a href="mailto:rohanchavda91@gmail.com">rohanchavda91@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td>Shital</td>
+            <td>Designer</td>
+            <td><a href="mailto:shitalchavda958@gmail.com">shitalchavda@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td>Vikesh</td>
+            <td>Manager</td>
+            <td><a href="mailto:vikesh@gmail.com">vikesh@gmail.com</a></td>
+        </tr>
+    </table>
+    <br>
+    <hr><br>
+    <h1>Table - 5: Table with Collapsed Colored Borders</h1>
+    <!-- Give all cells a colored border -->
+    <table class="table5">
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Wage</th>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>Intern</td>
+            <td>$500</td>
+        </tr>
+        <tr>
+            <td>Shital</td>
+            <td>Designer</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>Vikesh</td>
+            <td>Manager</td>
+            <td>$2000</td>
+        </tr>
+        <tr>
+            <td>Bhavik</td>
+            <td>Director</td>
+            <td>$3000</td>
+        </tr>
+        <tr>
+            <td>Dhaval</td>
+            <td>Assistant Manager</td>
+            <td>$2500</td>
+        </tr>
+    </table>
+    <br>
+    <hr><br>
+    <!-- Table with Custom Styling -->
+    <h1>Table - 6: Promotions Plans Table</h1>
+    <table class="table6">
+        <tr>
+            <th style="background-color:black;color:white;">Compare All Plans</th>
+            <th style="background-color: orange;">Starter</th>
+            <th style="background-color: red;">Advanced</th>
+            <th style="background-color: blue;">Enterprise</th>
+        </tr>
+        <tr>
+            <td id="sub">1st Month Management Cost</td>
+            <td>$400</td>
+            <td>$900</td>
+            <td>$1200</td>
+        </tr>
+        <tr>
+            <td id="sub">Following Month</td>
+            <td style="color:orange;font-size:24px;"><b>$300</b></td>
+            <td style="color:red;font-size:24px;"><b>$700</b></td>
+            <td style="color:blue;font-size:24px;"><b>$900</b></td>
+        </tr>
+        <tr>
+            <td id="sub">Delivery Time Frame</td>
+            <td>3-6 Months</td>
+            <td>3-6 Months</td>
+            <td>3-6 Months</td>
+        </tr>
+        <tr>
+            <td id="sub">Support</td>
+            <td>-</td>
+            <td>
+                <font face="noto color emoji">✅</font>
+            </td>
+            <td>
+                <font face="noto color emoji">✅</font>
+            </td>
+        </tr>
+        <tr>
+            <td id="sub">Certificate</td>
+            <td>-</td>
+            <td>
+                <font face="noto color emoji">✅</font>
+            </td>
+            <td>
+                <font face="noto color emoji">✅</font>
+            </td>
+        </tr>
+        <tr>
+            <td id="sub">Guaranteed Keywords Ranking in First Page of Google</td>
+            <td>18</td>
+            <td>20</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <span height="200px" width="auto"><button>Buy Now</button></span>
+            </td>
+            <td>
+                <span height="200px" width="auto"><button>Buy Now</button></span>
+            </td>
+            <td>
+                <span height="200px" width="auto"><button>Buy Now</button></span>
+            </td>
+        </tr>
+    </table>
+    <br><hr><br>
+    <h1>Table - 7: Table with Images</h1>
+    <p>Fruits!!!</p>
+    <table border="1">
+        <tr>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvuFWmgStX6zF38A7ZufXtDXTlUag-rcKnew&s" alt="Banana" height="100px" width="auto"></td>
+            <td><img src="https://png.pngtree.com/png-vector/20250501/ourmid/pngtree-ripe-mango-fruit-with-leaf-for-healthy-snack-png-image_16169885.png" alt="Mango" height="100px" width="auto"></td>
+        </tr>
+        <tr>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv1JyvHfAlA8P0megkEkBSPsHfiav-bsACzw&s" alt="Minion" height="100px" width="auto"></td>
+            <td><img src="https://drawinghowtos.com/wp-content/uploads/2025/04/The-smiling-Tom-colored.jpg" alt="Tom" height="100px" width="auto"></td>
+        </tr>
+    </table>
+    <br><hr><br>
+    <h1>Table - 8: Country Information</h1>
+    <table style="font-family:'Roboto',sans-serif;" class="table7">
+        <tr>
+            <th>Country Name</th>
+            <th>Country Flag</th>
+            <th>Capital</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td id="flag">🇮🇳</td>
+            <td>New Delhi</td>
+        </tr>
+        <tr>
+            <td>United States</td>
+            <td id="flag">🇺🇸</td>
+            <td>Washington, D.C.</td>
+        </tr>
+        <tr>
+            <td>Germany</td>
+            <td id="flag">🇩🇪</td>
+            <td>Berlin</td>
+        </tr>
+    </table>
+</body>
+
+</html>
