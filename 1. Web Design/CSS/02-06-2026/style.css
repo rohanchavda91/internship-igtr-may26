@@ -1,81 +1,82 @@
-        div.task {
-            width: 1000px;
-            height: 1000px;
-            margin: 10px;
-            padding: 10px;
-            border: 2px solid black;
-            border-radius: 10px;
-        }
+      div.task {
+          width: 1000px;
+          height: 1000px;
+          margin: 10px;
+          padding: 10px;
+          border: 2px solid black;
+          border-radius: 10px;
+      }
 
-        .image {
-            background-image: url('./bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: repeat;
-            width: 750px;
-            height: 750px;
-            position: relative;
-            margin: 20px auto;
-        }
+      .image {
+          background-image: url('./bg.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: repeat;
+          width: 750px;
+          height: 750px;
+          position: relative;
+          margin: 20px auto;
+      }
 
-        .tr,
-        .tl,
-        .br,
-        .bl,
-        .c {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 10px;
-            display: block;
-        }
+      .tr,
+      .tl,
+      .br,
+      .bl,
+      .c {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 10px;
+          display: block;
+      }
 
-        .tr {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100px;
-            height: 100px;
-        }
+      .tr {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100px;
+          height: 100px;
+      }
 
-        .tl {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100px;
-            height: 100px;
-        }
+      .tl {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100px;
+          height: 100px;
+      }
 
-        .br {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 100px;
-            height: 100px;
-        }
+      .br {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 100px;
+          height: 100px;
+      }
 
-        .bl {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100px;
-            height: 100px;
-        }
+      .bl {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100px;
+          height: 100px;
+      }
 
-        .c {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100px;
-            height: 100px;
-        }
+      .c {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100px;
+          height: 100px;
+      }
 
-        .i {
-            width: 50px;
-            height: 50px;
-            background-image: url('./b.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin: auto; justify-content: center;
-        }
+      .i {
+          width: 50px;
+          height: 50px;
+          background-image: url('./b.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          margin: auto;
+          justify-content: center;
+      }
