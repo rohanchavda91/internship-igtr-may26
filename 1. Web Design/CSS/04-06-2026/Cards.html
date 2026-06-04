@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="Cards.css">
+    <style>
+        * {
+            font-family: 'Roboto', 'Calibri', sans-serif;
+        }
+
+        nav {
+            background-color: grey;
+            height: 60px;
+            font-size: 42px;
+            font-weight: bold;
+            text-decoration: italic;
+            color: white;
+            margin: auto;
+            padding: 20px;
+        }
+
+        span.nav {
+            font-size: 24px;
+            font-weight: initial;
+            text-decoration: none;
+            text-align: right;
+            margin: auto;
+            padding: 40px;
+            position: absolute;
+            right: 0;
+            
+        }
+
+        span.nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        a:hover {
+            cursor: crosshair;
+        }
+
+        .card {
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 300px;
+            height: 400px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <nav>
+       <i>My Website</i>
+        <span class="nav">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </span>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>
+            This is the main heading
+        </h2>
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+            melon azuki bean garlic.</p>
+
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
+            collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        <br>
+        <!-- 5 cards as per shown in image.png -->
+        <div class="card">
+            <div class="cardhead">Card One</div>
+            <p>This is a description for card 1. It contains some sample text to illustrate the card layout.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
