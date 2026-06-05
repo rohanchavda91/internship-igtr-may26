@@ -4,7 +4,8 @@
 
 body{
     background-color: rgb(255, 255, 240);
-
+    background-image: url('./School.jpeg');
+    background-size: cover;
 }
 
 marquee {
