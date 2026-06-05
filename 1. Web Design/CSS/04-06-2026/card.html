@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Roboto', 'Calibri', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgb(51, 51, 51);
+            color: white;
+            height: 80px;
+            padding: 20px;
+        }
+
+        nav i {
+            font-size: 32px;
+        }
+
+        .nav-links {
+            float: right;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .layout {
+            padding: 20px;
+        }
+
+        .main-content{
+            width: 70%;
+            display: grid;
+            
+        }
+        .sidebar {
+            width: 30%;
+            background-color: rgb(51,51,51);
+            padding: 20px;
+            float: right;
+        }
+
+        .card{
+            background-color: antiquewhite;
+            border: 3px solid rgb(51,51,51);
+            color: rgb(51,51,51);
+            padding: 20px;
+            border-radius: 10px;
+            width: 25%;
+            height: 250px;
+            margin: 20px;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <i>My Website</i>
+        <div class="nav-links">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </nav>
+
+    <div class="layout">
+        <div class="main-content">
+            <div class="hero">
+                <h1>This is the main heading</h1><br>
+                <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
+                    tomatillo melon azuki bean garlic.</p> <br>
+                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava
+                    bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko
+                    zucchini.</p>
+            </div> <br>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-head">Card One</div>
+                    <div class="card-body">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce
+                        kohlrabi amaranth water spinach avocado.</div>
+                </div>
+                <div class="card">
+                    <div class="card-head">Card Two</div>
+                    <div class="card-body">Daikon napa cabbage asparagus winter purslane kale. Celery potato scallion
+                        desert raisin horseradish spinach carrot soko.</div>
+                </div>
+                <div class="card">
+                    <div class="card-head">Card Three</div>
+                    <div class="card-body">Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss
+                        chard seakale pumpkin onion chickpea gram corn pea.</div>
+                </div>
+                <div class="card">
+                    <div class="card-head">Card Five</div>
+                    <div class="card-body">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong
+                        celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</div>
+                </div>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            Have you discovered all of the other excellent content on this website?
+        </aside>
+    </div>
+</body>
+
+</html>
