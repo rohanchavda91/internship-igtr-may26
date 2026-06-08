@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        * {
+            font-family: 'Calibri', 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        div.dropdown-content {
+            display: none;
+            position: absolute;
+            margin: 10px;
+            background-color: antiquewhite;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        div.dropdown-content {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+        }
+
+        div.dropdown-content {
+            background-color: #404040;
+            align-items: center;
+        }
+
+        div.dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        div.dropdown {
+            position: relative;
+            display: inline-block;
+            padding: 2.5px 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        span.dropdown {
+            position: relative;
+            display: inline-block;
+            padding: 2.5px 5px;
+        }
+
+        span.subtitle {
+            font-size: 24px;
+            font-weight: bold;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <span class="dropdown"><img src="nibbles.png" alt="Nibbles" height="100px" width="100px"></span>
+        <div class="dropdown-content">
+            <img src="nibbles.gif" alt="Nibbles">
+            <br>
+            <span class="subtitle">
+                <center>
+                    Nibbles Smile
+                </center>
+            </span>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <span class="dropdown"><img src="nibbles-jerry-boom.png" alt="Nibbles" height="100px" width="100px"></span>
+        <div class="dropdown-content">
+            <img src="nibbles-jerry-boom.gif" alt="Nibbles">
+            <br>
+            <span class="subtitle">
+                <center>
+                    Nibbles Smile
+                </center>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>

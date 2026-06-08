@@ -1,0 +1,97 @@
+<!-- Form-1 : Contact Information -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            align-items: center;
+            font-family: Calibri, Roboto, Sans-serif;
+        }
+
+        label {
+            align-items: left;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset style="width: 300px;">
+        <legend >Contact Information</legend>
+        <h1> Contact </h1>
+        <Label>First Name</Label> <br>
+        <input type="text" Maxlengh="15" id="fname"> <br><br>
+        <Label>Last Name</Label> <br>
+        <input type="text" Maxlengh="15" id="lname"> <br><br>
+        <Label>Phone</Label> <br>
+        <input type="tel" id="telephone" Minlength="10" Maxlength="10"> <br><br>
+        <label>Date and Time</label> <br>
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+        </select>
+        <select>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+        <input type="number" Maxlengh="4" id="year" min="1900" max="2026">
+        <input type="time" id="appt" name="appt">
+        <br><br>
+        <Label>Seating Preference</Label> <br>
+        <input type="radio" id="indoor" name="seating" value="indoor">
+        <label for="indoor">Indoor</label> <br>
+        <input type="radio" id="outdoor" name="seating" value="outdoor">
+        <label for="outdoor">Outdoor</label> <br><br>
+        <Label>Additional Requests</Label> <br>
+        <input type="text"> <br><br>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Yes, Subscribe me to your newsletter.</label><br><br>
+        <button type="submit" style="width: 100%; border-radius: none;background-color:black;color:white;border:none;height:25px;">Request Booking</button>
+    </fieldset>
+</body>
+
+</html>
