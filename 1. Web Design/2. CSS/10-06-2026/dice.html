@@ -1,21 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice</title>
     <style>
-        
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        div {
+            border: 2px solid black;
+        }
+
+        div#cube {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            transform-style: preserve-3d;
+            animation: yRotate 1s infinite linear;
+        }
+
+        div#top,
+        div#bottom,
+        div#left,
+        div#right,
+        div#front,
+        div#back {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            border: 2px black solid;
+            background: #00ffff;
+
+        }
+
+        div#top {
+            transform: rotateX(90deg) translateZ(250px);
+        }
+
+        div#bottom {
+            transform: rotateX(-90deg) translateZ(250px);
+        }
+
+        div#front {
+            transform: translate(250px);
+        }
+
+        div#left {
+            transform: rotateY(-90deg) translateZ(250px);
+        }
+
+        div#right {
+            transform: rotateY(90deg) translateZ(250px);
+        }
+
+        div#back {
+            transform: rotateY(180deg) translateZ(250px);
+        }
+
+        @keyframes yRotate {
+            from {transform: rotateY(0deg);}
+            to {transform: rotateY(360deg);}
+            
+        }
     </style>
 </head>
+
 <body>
     <div id="cube">
-        <div id="top"></div>
-        <div id="bottom"></div>
-        <div id="front"></div>
-        <div id="left"></div>
-        <div id="right"></div>
-        <div id="back"></div>
+        <div id="top">
+            <img src="./1.png" height="500px" width="500px">
+        </div>
+        <div id="bottom">
+            <img src="./2.png" height="500px" width="500px">
+        </div>
+        <div id="front">
+            <img src="./3.png" height="500px" width="500px">
+        </div>
+        <div id="left">
+            <img src="./4.png" height="500px" width="500px">
+        </div>
+        <div id="right">
+            <img src="./5.png" height="500px" width="500px">
+        </div>
+        <div id="back">
+            <img src="./6.png" height="500px" width="500px">
+        </div>
     </div>
 </body>
+
 </html>
