@@ -2,18 +2,18 @@
 
 ## May 18, 2026
 
-Aaj HTML ki journey start kari 💻
-Headers, paragraphs, links, line breaks, font styling, alignment aur images add karna seekha. Basically first proper webpage bana liya 😌
+- Aaj HTML ki journey start kari 💻
+- Headers, paragraphs, links, line breaks, font styling, alignment aur images add karna seekha. Basically first proper webpage bana liya 😌
 
 ## May 19, 2026
 
-Bookmarking aur page navigation pe kaam kiya 🔗
-Anchor tags aur section IDs use karke internal linking aur smooth page navigation banana seekha.
+- Bookmarking aur page navigation pe kaam kiya 🔗
+- Anchor tags aur section IDs use karke internal linking aur smooth page navigation banana seekha.
 
 ## May 20, 2026
 
-Pure tables ka practice/exam day tha 😭🔥
-10 different table tasks complete kiye — borders, colors, styling, images, flag emojis, pricing layouts etc. Ab tables ka darr khatam 💪
+- Pure tables ka practice/exam day tha 😭🔥
+- 10 different table tasks complete kiye — borders, colors, styling, images, flag emojis, pricing layouts etc. Ab tables ka darr khatam 💪
 
 ## May 21, 2026
 
@@ -22,53 +22,80 @@ Pure tables ka practice/exam day tha 😭🔥
 * Calculator UI
 * Student Marksheet
 
-Tables + styling combine karke proper real-world layouts banaye ✨
+- Tables + styling combine karke proper real-world layouts banaye ✨
 
 ## May 22, 2026
 
-HTML Forms master kiye 📝
-Registration form banaya with text fields, email, phone input, radio buttons, dropdowns aur submit buttons. Saath me almost saare form elements ka reference page bhi banaya.
+- HTML Forms master kiye 📝
+- Registration form banaya with text fields, email, phone input, radio buttons, dropdowns aur submit buttons. Saath me almost saare form elements ka reference page bhi banaya.
 
-Phir **Photoshop** me basic start kiya... Image overlay and basic compositions se
+- Phir **Photoshop** me basic start kiya... Image overlay and basic compositions se
 
 ## May 23, 2026
 
-HTML Forms ke task kiye....
+- HTML Forms ke task kiye....
 
 ## May 25, 2026
 
-Ek simple evu "Holiday Request Form" bnavyu
+- Ek simple evu "Holiday Request Form" bnavyu
 
 ## May 26, 2026
 
-Exam - 5 different tasks
+- Exam - 5 different tasks
 
 ## May 27, 2026
 
-Photoshop ma total 5 collages bnavvana kidha ane ek simple evu drawing i.e. Ghar bnavvanu kidhu!
+- Photoshop ma total 5 collages bnavvana kidha ane ek simple evu drawing i.e. Ghar bnavvanu kidhu!
 
 ## May 28, 2026 
 # Holiday - Barkid
 
 ## May 29, 2026
 
-Task - Make a CV in HTML with applying styles and photo should contain creative design which is familiar to HTML
+- Task - Make a CV in HTML with applying styles and photo should contain creative design which is familiar to HTML
 
 ## May 30, 2026
 
-Continuation of CV
+- Continuation of CV
 
 ## May 31, 2026
 # Sunday
 
 ## 1st June, 2026
 
-CSS sharu karyu... According to W3Schools course, CSSBox Model sudhi karaavyu.
+- CSS sharu karyu... According to W3Schools course, CSSBox Model sudhi karaavyu.
 
 ## 2nd June, 2026
 
-Ardhu CSS Khatam
-Tasks - Image and 5 positions which's inside the image, 
+- Ardhu CSS Khatam
+- Tasks - Image and 5 positions which's inside the image, 
     Top - Left, Right
     Bottom - Left Right
     Centre.
+
+## 3rd June, 2026
+
+**Photoshop**
+- More Selection tools +5 Task
+
+## 4th June, 2026
+
+**Photoshop**
+- Task given in WhatsApp : Hands pouring water and soil into a mangotree
+
+## 5th June, 2026'
+
+**Exam**
+- Random Task (Creativity Mode ON)
+
+## 6th June, 2026
+
+**CSS**
+- Dropdown Menu 
+- Navigation Bar
+
+## 7th June, 2026
+
+# Sunday
+
+## 8th June, 2026
