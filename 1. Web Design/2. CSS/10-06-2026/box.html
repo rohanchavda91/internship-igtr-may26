@@ -8,9 +8,16 @@
     <style>
         * {
             margin: 10px;
+            height: 100vh;
+            width: 100vw;
         }
 
-        div#mainbox{
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        div#mainbox {
             width: 100%;
             height: 100%;
             position: relative;
@@ -23,10 +30,10 @@
             height: 200px;
             background-color: red;
             animation-name: chakkar;
-            animation-duration: 500ms;
+            animation-duration: 5s;
             animation-iteration-count: infinite;
-            position:inherit;
-            
+            position: inherit;
+
         }
 
         @keyframes chakkar {
@@ -39,18 +46,18 @@
             25% {
                 background-color: green;
                 top: 0%;
-                left: 100%;
+                left: 90%;
             }
 
             50% {
                 background-color: yellow;
-                top: 100%;
-                left: 100%;
+                top: 90%;
+                left: 90%;
             }
 
             75% {
                 background-color: blue;
-                top: 100%;
+                top: 90%;
                 left: 0%;
             }
 

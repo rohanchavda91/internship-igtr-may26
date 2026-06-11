@@ -10,12 +10,15 @@
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
+            font-size: 54px;
         }
 
         body {
+            height: 100vh;
             display: flex;
             justify-content: center;
-            align-content: center;
+            align-items: center;
+            perspective: 1500px;
         }
 
         div {
@@ -27,7 +30,8 @@
             width: 500px;
             height: 500px;
             transform-style: preserve-3d;
-            animation: yRotate 1s infinite linear;
+            animation: yRotate 10s infinite linear;
+            backface-visibility: visible;
         }
 
         div#top,
@@ -43,38 +47,43 @@
             justify-content: center;
             align-content: center;
             border: 2px black solid;
-            background: #00ffff;
+            background: #ff000000;
 
         }
 
         div#top {
-            transform: rotateX(90deg) translateZ(250px);
+            transform: rotateX(90deg) translateY(-250px) translateZ(250px);
         }
 
         div#bottom {
-            transform: rotateX(-90deg) translateZ(250px);
+            transform: rotateX(-90deg) translateY(250px) translateZ(250px);
         }
 
         div#front {
-            transform: translate(250px);
+            transform: translateZ(0px);
         }
 
         div#left {
-            transform: rotateY(-90deg) translateZ(250px);
+            transform: rotateY(-90deg) translateX(-250px) translateZ(250px);
         }
 
         div#right {
-            transform: rotateY(90deg) translateZ(250px);
+            transform: rotateY(90deg) translateX(250px) translateZ(250px);
         }
 
         div#back {
-            transform: rotateY(180deg) translateZ(250px);
+            transform: rotateY(180deg) translateZ(500px);
         }
 
         @keyframes yRotate {
-            from {transform: rotateY(0deg);}
-            to {transform: rotateY(360deg);}
-            
+            from {
+                transform: rotatex(0deg);
+            }
+
+            to {
+                transform: rotatex(360deg);
+            }
+
         }
     </style>
 </head>
