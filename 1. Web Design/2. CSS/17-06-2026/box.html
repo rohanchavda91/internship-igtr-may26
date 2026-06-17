@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-color: dodgerblue;
+        }
+
+        .container {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent;
+            box-sizing: border-box;
+        }
+
+        .container div {
+            background-color: #f1f1f1;
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            margin: 20px;
+        }
+
+        #top {
+            top: 0;
+        }
+
+        #middle {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #bottom {
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="top">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="container" id="middle">
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <div class="container" id="bottom">
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+
+</html>
