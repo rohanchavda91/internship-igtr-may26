@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit Property</title>
+    <style>
+        .image-container {
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+
+        .image-container .img1 {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .image-container .img2 {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .image-container .img3{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .image-container .img4{
+            width: 100%;
+            height: auto;
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>object-fit: fill</h2>
+    <div class="image-container">
+        <img src="./../Image%20Styling/image.png" alt="Pineapple" class="img1">
+    </div>
+
+    <h2>object-fit: cover</h2>
+    <div class="image-container">
+        <img src="./../Image%20Styling/image.png" alt="Pineapple" class="img2">
+    </div>
+
+    <h2>object-fit: contain</h2>
+    <div class="image-container">
+        <img src="./../Image%20Styling/image.png" alt="Pineapple" class="img3">
+    </div>
+
+    <h2>object-fit: scale-down</h2>
+    <div class="image-container">
+        <img src="./../Image%20Styling/image.png" alt="Pineapple" class="img4">
+    </div>
+
+</body>
+
+</html>
