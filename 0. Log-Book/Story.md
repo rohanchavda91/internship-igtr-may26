@@ -1,21 +1,21 @@
 # My Web Design Learning Journey 🚀
 
-## May 18, 2026
+## 18th May, 2026 - Monday
 
-- Aaj HTML ki journey start kari 💻
-- Headers, paragraphs, links, line breaks, font styling, alignment aur images add karna seekha. Basically first proper webpage bana liya 😌
+* Aaj HTML ki journey start kari 💻
+* Headers, paragraphs, links, line breaks, font styling, alignment aur images add karna seekha. Basically first proper webpage bana liya 😌
 
-## May 19, 2026
+## 19th May, 2026 - Tuesday
 
-- Bookmarking aur page navigation pe kaam kiya 🔗
-- Anchor tags aur section IDs use karke internal linking aur smooth page navigation banana seekha.
+* Bookmarking aur page navigation pe kaam kiya 🔗
+* Anchor tags aur section IDs use karke internal linking aur smooth page navigation banana seekha.
 
-## May 20, 2026
+## 20th May, 2026 - Wednesday
 
-- Pure tables ka practice/exam day tha 😭🔥
-- 10 different table tasks complete kiye — borders, colors, styling, images, flag emojis, pricing layouts etc. Ab tables ka darr khatam 💪
+* Pure tables ka practice/exam day tha 😭🔥
+* 10 different table tasks complete kiye — borders, colors, styling, images, flag emojis, pricing layouts etc. Ab tables ka darr khatam 💪
 
-## May 21, 2026
+## 21st May, 2026 - Thursday
 
 2 mini projects banaye:
 
@@ -24,78 +24,146 @@
 
 - Tables + styling combine karke proper real-world layouts banaye ✨
 
-## May 22, 2026
+## 22nd May, 2026 - Friday
 
-- HTML Forms master kiye 📝
-- Registration form banaya with text fields, email, phone input, radio buttons, dropdowns aur submit buttons. Saath me almost saare form elements ka reference page bhi banaya.
+* HTML Forms master kiye 📝
 
-- Phir **Photoshop** me basic start kiya... Image overlay and basic compositions se
+* Registration form banaya with text fields, email, phone input, radio buttons, dropdowns aur submit buttons. Saath me almost saare form elements ka reference page bhi banaya.
 
-## May 23, 2026
+* Phir **Photoshop** me basic start kiya... Image overlay and basic compositions se
 
-- HTML Forms ke task kiye....
+## 23rd May, 2026 - Saturday
 
-## May 25, 2026
+* HTML Forms ke task kiye....
 
-- Ek simple evu "Holiday Request Form" bnavyu
+## 24th May, 2026
 
-## May 26, 2026
+### Sunday
 
-- Exam - 5 different tasks
+## 25th May, 2026 - Monday
 
-## May 27, 2026
+* Ek simple evu "Holiday Request Form" bnavyu
 
-- Photoshop ma total 5 collages bnavvana kidha ane ek simple evu drawing i.e. Ghar bnavvanu kidhu!
+## 26th May, 2026 - Tuesday
 
-## May 28, 2026 
-# Holiday - Barkid
+* Exam - 5 different tasks
 
-## May 29, 2026
+## 27th May, 2026 - Wednesday
 
-- Task - Make a CV in HTML with applying styles and photo should contain creative design which is familiar to HTML
+* Photoshop ma total 5 collages bnavvana kidha ane ek simple evu drawing i.e. Ghar bnavvanu kidhu!
 
-## May 30, 2026
+## 28th May, 2026 - Thursday
+### Holiday - Barkid
 
-- Continuation of CV
+## 29th May, 2026 - Friday
 
-## May 31, 2026
-# Sunday
+* Task - Make a CV in HTML with applying styles and photo should contain creative design which is familiar to HTML
 
-## 1st June, 2026
+## 30th May, 2026 - Saturday
 
-- CSS sharu karyu... According to W3Schools course, CSSBox Model sudhi karaavyu.
+* Continuation of CV
 
-## 2nd June, 2026
+## 31st May, 2026
 
-- Ardhu CSS Khatam
-- Tasks - Image and 5 positions which's inside the image, 
-    Top - Left, Right
-    Bottom - Left Right
-    Centre.
+### Sunday
 
-## 3rd June, 2026
+## 1st June, 2026 - Monday
+
+* CSS sharu karyu... According to W3Schools course, CSS Box Model sudhi karaavyu.
+
+## 2nd June, 2026 - Tuesday
+
+* Ardhu CSS Khatam
+* Tasks - Image and 5 positions which's inside the image:
+
+  * Top - Left, Right
+  * Bottom - Left, Right
+  * Centre
+
+## 3rd June, 2026 - Wednesday
 
 **Photoshop**
-- More Selection tools +5 Task
 
-## 4th June, 2026
+* More Selection tools + 5 Task
+
+## 4th June, 2026 - Thursday
 
 **Photoshop**
-- Task given in WhatsApp : Hands pouring water and soil into a mangotree
 
-## 5th June, 2026'
+* Task given in WhatsApp : Hands pouring water and soil into a mangotree
+
+## 5th June, 2026 - Friday
 
 **Exam**
-- Random Task (Creativity Mode ON)
 
-## 6th June, 2026
+* Random Task (Creativity Mode ON)
+
+## 6th June, 2026 - Saturday
 
 **CSS**
-- Dropdown Menu 
-- Navigation Bar
+
+* Dropdown Menu
+* Navigation Bar
 
 ## 7th June, 2026
 
-# Sunday
+### Sunday
 
-## 8th June, 2026
+## 8th June, 2026 - Monday
+
+**CSS**
+
+* W3Schools Folder
+
+## 9th June, 2026 - Tuesday
+
+**CSS**
+
+* Gradients : Linear, Radical & Conical
+
+## 10th June, 2026 - Wednesday
+
+**CSS**
+
+* Different Login Forms (WhatsApp Task)
+
+## 11th June, 2026 - Thursday
+
+**CSS**
+
+* Continuation
+
+## 12th June, 2026 - Friday
+
+**Photoshop**
+
+* Crop tool (Related 5 tasks)
+
+## 13th June, 2026 - Saturday
+
+**CSS Exam**
+
+* Statement: Home Appliances Website
+
+## 14th June, 2026
+
+### Sunday
+
+## 15th June, 2026 - Monday
+
+**CSS**
+
+* Image Styling
+* Object Styling
+
+## 16th June, 2026 - Tuesday
+
+**CSS**
+
+* W3Schools Folder Completion
+
+## 17th June, 2026 - Wednesday
+
+**CSS**
+
+* Flexbox
