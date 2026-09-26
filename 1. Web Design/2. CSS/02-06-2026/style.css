@@ -1,0 +1,67 @@
+/* style.css */
+
+/* Container: applies to both a wrapper div.image and body.image */
+.image {
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 750px;
+    height: 750px;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* When the body itself has the image class, center the content vertically */
+body.image {
+    /* Use a full-viewport background when the body has the image class */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Common box styles: use flex to center contents */
+.tr,
+.tl,
+.br,
+.bl,
+.c {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tr { top: 0; right: 0; }
+.tl { top: 0; left: 0; }
+.br { bottom: 0; right: 0; }
+.bl { bottom: 0; left: 0; }
+
+/* perfectly center the middle box */
+.c { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+.i {
+    width: 50px;
+    height: 50px;
+    background-image: url('./b.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Make buttons fill their box nicely (optional) */
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop the latest phones, audio, computing and accessories at Volt.">
+  <title>Shop | Volt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement-bar"><p>Free shipping on orders above ₹999 <span aria-hidden="true">•</span> Easy 7-day returns</p></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Volt home">VOLT<span>°</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a class="active" href="products.html">Shop</a><a href="categories.html">Categories</a><a href="contact.html">About us</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button search-toggle" type="button">🔎</button>
+        <a href="login.html" class="icon-button active">🥸</a>
+        <a href="cart.html" class="cart-button">🛒<b class="cart-count">0</b></a>
+      </div>
+    </div>
+    <div class="search-panel" aria-hidden="true"><div class="container search-panel-inner"><label class="sr-only" for="site-search">Search Volt</label><input id="site-search" type="search" placeholder="Search products…"><button class="search-submit" type="button">Search</button></div></div>
+  </header>
+
+  <main>
+    <section class="shop-intro">
+      <div class="container">
+        <p class="eyebrow">THE VOLT COLLECTION</p>
+        <h1>Tech that feels<br><em>like you.</em></h1>
+        <p>Explore thoughtfully selected everyday tech—made for the way you work, play and create.</p>
+      </div>
+    </section>
+
+    <section class="shop-section">
+      <div class="container">
+        <div class="shop-toolbar">
+          <div class="product-search-wrap">
+            <label class="sr-only" for="product-search">Search the products</label>
+            <input id="product-search" type="search" placeholder="Search the collection">
+            <span aria-hidden="true">⌕</span>
+          </div>
+          <div class="sort-wrap">
+            <label for="sort-products">Sort:</label>
+            <select id="sort-products">
+              <option value="featured">Featured</option>
+              <option value="low">Price: low to high</option>
+              <option value="high">Price: high to low</option>
+              <option value="name">Name: A to Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="shop-layout">
+          <aside class="shop-filters" aria-label="Product filters">
+            <div class="filter-heading"><h2>Filter by</h2><button class="clear-filters" type="button">Clear</button></div>
+            <div class="filter-group">
+              <h3>Category</h3>
+              <button class="filter-button active" type="button" data-filter="all">All products <span>8</span></button>
+              <button class="filter-button" type="button" data-filter="audio">Audio <span>2</span></button>
+              <button class="filter-button" type="button" data-filter="mobiles">Mobiles <span>2</span></button>
+              <button class="filter-button" type="button" data-filter="computing">Computing <span>2</span></button>
+              <button class="filter-button" type="button" data-filter="wearables">Wearables <span>1</span></button>
+              <button class="filter-button" type="button" data-filter="accessories">Accessories <span>1</span></button>
+            </div>
+            <div class="filter-note"><span>✦</span><p>All Volt products include an official warranty.</p></div>
+          </aside>
+
+          <div>
+            <div class="results-line"><p><strong id="results-count">8</strong> products</p><p>Showing our latest picks</p></div>
+            <div class="product-grid shop-product-grid" data-product-grid>
+              <article class="product-card" data-category="audio" data-price="7999" data-name="Nova Pods Pro">
+                <a class="product-image" href="product-details.html"><span class="product-tag">BESTSELLER</span><button class="wish-button" type="button" aria-label="Save Nova Pods Pro">♡</button><img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=700&q=85" alt="White wireless earbuds"></a>
+                <div class="product-meta"><p class="product-category">AUDIO</p><span class="rating">★ 4.8</span></div><h3><a href="product-details.html">Nova Pods Pro</a></h3><div class="product-bottom"><p class="price">₹7,999</p><button class="add-to-cart" type="button" data-product="Nova Pods Pro">Add +</button></div>
+              </article>
+              <article class="product-card" data-category="wearables" data-price="11899" data-name="Flex One Watch">
+                <a class="product-image" href="product-details.html"><span class="product-tag sale-tag">SAVE 15%</span><button class="wish-button" type="button" aria-label="Save Flex One Watch">♡</button><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=85" alt="Minimal smart watch"></a>
+                <div class="product-meta"><p class="product-category">WEARABLES</p><span class="rating">★ 4.7</span></div><h3><a href="product-details.html">Flex One Watch</a></h3><div class="product-bottom"><p class="price">₹11,899 <del>₹13,999</del></p><button class="add-to-cart" type="button" data-product="Flex One Watch">Add +</button></div>
+              </article>
+              <article class="product-card" data-category="computing" data-price="29999" data-name="PixelTab 11">
+                <a class="product-image" href="product-details.html"><button class="wish-button" type="button" aria-label="Save PixelTab 11">♡</button><img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=700&q=85" alt="Tablet with a pen"></a>
+                <div class="product-meta"><p class="product-category">TABLETS</p><span class="rating">★ 4.9</span></div><h3><a href="product-details.html">PixelTab 11</a></h3><div class="product-bottom"><p class="price">₹29,999</p><button class="add-to-cart" type="button" data-product="PixelTab 11">Add +</button></div>
+              </article>
+              <article class="product-card" data-category="audio" data-price="4499" data-name="Orbit Speaker Mini">
+                <a class="product-image" href="product-details.html"><button class="wish-button" type="button" aria-label="Save Orbit Speaker Mini">♡</button><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=700&q=85" alt="Compact wireless speaker"></a>
+                <div class="product-meta"><p class="product-category">SPEAKERS</p><span class="rating">★ 4.6</span></div><h3><a href="product-details.html">Orbit Speaker Mini</a></h3><div class="product-bottom"><p class="price">₹4,499</p><button class="add-to-cart" type="button" data-product="Orbit Speaker Mini">Add +</button></div>
+              </article>
+              <article class="product-card" data-category="mobiles" data-price="59999" data-name="Zen Phone X">
+                <a class="product-image" href="product-details.html"><span class="product-tag">NEW</span><button class="wish-button" type="button" aria-label="Save Zen Phone X">♡</button><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=700&q=85" alt="Modern smartphone"></a>
+                <div class="product-meta"><p class="product-category">MOBILES</p><span class="rating">★ 4.9</span></div><h3><a href="product-details.html">Zen Phone X</a></h3><div class="product-bottom"><p class="price">₹59,999</p><button class="add-to-cart" type="button" data-product="Zen Phone X">Add +</button></div>
+              </article>
+              <article class="product-card" data-category="computing" data-price="74999" data-name="Airbook 14">
+                <a class="product-image" href="product-details.html"><button class="wish-button" type="button" aria-label="Save Airbook 14">♡</button><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=85" alt="Slim laptop on a desk"></a>
+                <div class="product-meta"><p class="product-category">LAPTOPS</p><span class="rating">★ 4.8</span></div><h3><a href="product-details.html">Airbook 14</a></h3><div class="product-bottom"><p class="price">₹74,999</p><button class="add-to-cart" type="button" data-product="Airbook 14">Add +</button></div>
+              </article>
+              <article class="product-card" data-category="accessories" data-price="2499" data-name="SnapCharge Duo">
+                <a class="product-image" href="product-details.html"><button class="wish-button" type="button" aria-label="Save SnapCharge Duo">♡</button><img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=700&q=85" alt="Wireless charging pad"></a>
+                <div class="product-meta"><p class="product-category">ACCESSORIES</p><span class="rating">★ 4.7</span></div><h3><a href="product-details.html">SnapCharge Duo</a></h3><div class="product-bottom"><p class="price">₹2,499</p><button class="add-to-cart" type="button" data-product="SnapCharge Duo">Add +</button></div>
+              </article>
+              <article class="product-card" data-category="mobiles" data-price="8999" data-name="Capture Cam Clip">
+                <a class="product-image" href="product-details.html"><span class="product-tag sale-tag">SAVE 10%</span><button class="wish-button" type="button" aria-label="Save Capture Cam Clip">♡</button><img src="https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?auto=format&fit=crop&w=700&q=85" alt="Mobile camera lens accessory"></a>
+                <div class="product-meta"><p class="product-category">MOBILES</p><span class="rating">★ 4.6</span></div><h3><a href="product-details.html">Capture Cam Clip</a></h3><div class="product-bottom"><p class="price">₹8,999 <del>₹9,999</del></p><button class="add-to-cart" type="button" data-product="Capture Cam Clip">Add +</button></div>
+              </article>
+            </div>
+            <p class="empty-results" hidden>No products matched your search. Try another word or clear the filters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main"><div class="footer-brand"><a class="brand" href="index.html">VOLT<span>°</span></a><p>Everyday technology,<br>elevated.</p></div><div><h3>Shop</h3><a href="products.html">All products</a><a href="categories.html">Categories</a><a href="products.html?collection=new">New arrivals</a></div><div><h3>Help</h3><a href="contact.html">Contact us</a><a href="contact.html#returns">Returns</a><a href="contact.html#faq">FAQs</a></div><div><h3>Follow along</h3><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">X / Twitter</a></div></div>
+    <div class="container footer-bottom"><p>© 2026 Volt Tech. Built for the web.</p><div><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

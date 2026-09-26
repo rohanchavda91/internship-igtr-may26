@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+
+    <style>
+        * {
+            font-family: 'noto color emoji', 'calibri', sans-serif;
+            margin-left: 20px;
+        }
+
+        #main {
+            height: 100px;
+            width: 200px;
+            background-image: linear-gradient(to right, #00ffff, #0015ff9d);
+        }
+
+        #main button {
+            background-image: linear-gradient(-30deg, #0015ff9d, #00ffff);
+            height: 60%;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 5px 10px;
+        }
+
+        #main button:hover {
+            cursor: not-allowed;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="main">
+        <button>
+            hover!
+        </button>
+    </div>
+
+</body>
+
+</html>

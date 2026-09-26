@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Language Change</title>
+
+    <style>
+        * {
+            font-family: 'hywenhei 85w';
+        }
+
+        button,
+        select,
+        select option {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        select,
+        button {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #langText {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>
+        Kindly Select the Language
+        <font face="noto color emoji">🌏</font>
+    </h2>
+
+    <br>
+
+    <select id="lang">
+
+        <option value="sel" selected>-- select --</option>
+
+        <option value="eng">English</option>
+
+        <option value="hin">हिन्दी Hindi</option>
+
+        <option value="guj">ગુજરાતી Gujarati</option>
+
+        <option value="mar">मराठी Marathi</option>
+
+        <option value="jap">日本語 Japanese</option>
+
+        <option value="chi">中文 Chinese</option>
+
+        <option value="arb">العربية Arabic</option>
+
+    </select>
+
+    <button onclick="changeLang()">Change Language</button>
+
+    <hr>
+
+    <br>
+
+    <p id="langText">-- Language Not Selected --</p>
+
+
+    <script>
+        function changeLang() {
+
+            const lang = document.getElementById('lang').value;
+            const txt = document.getElementById('langText');
+
+            switch (lang) {
+
+                case 'sel':
+                    alert("Select Language 😡😡");
+                    txt.innerHTML = "-- Language Not Selected --";
+                    break;
+
+                case 'eng':
+                    txt.innerHTML = "Hello! How are you?";
+                    break;
+
+                case 'hin':
+                    txt.innerHTML = "नमस्ते! कैसे हैं आप?";
+                    break;
+
+                case 'guj':
+                    txt.innerHTML = "હેલો! તમે કેમ છો?";
+                    break;
+
+                case 'mar':
+                    txt.innerHTML = "नमस्कार! तुम्ही कसे आहात?";
+                    break;
+
+                case 'jap':
+                    txt.innerHTML = "こんにちは！おげんきですか？";
+                    break;
+
+                case 'chi':
+                    txt.innerHTML = "你好！你好吗？";
+                    break;
+
+                case 'arb':
+                    txt.innerHTML = "مرحباً! كيف حالك؟";
+                    break;
+
+                default:
+                    txt.innerHTML = "-- Language Not Selected --";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

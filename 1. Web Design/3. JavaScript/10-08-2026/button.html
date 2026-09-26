@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Changer</title>
+    <style>
+        button {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="./face/happy.png" id="face"> <br>
+    <button onclick="document.getElementById('face').src='./face/happy.png'">
+        Make Happy
+    </button>
+
+    <button onclick="document.getElementById('face').src='./face/angry.png'">
+        Make Angry
+    </button>
+
+    <button onclick="document.getElementById('face').src='./face/laugh.png'">
+        Make Laugh
+    </button>
+
+</body>
+
+</html>

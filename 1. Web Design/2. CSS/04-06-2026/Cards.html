@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="Cards.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Roboto', 'Calibri', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f2f2f2;
+            color: #222;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #2f2f2f;
+            color: #fff;
+            padding: 18px 36px;
+        }
+
+        nav i {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            font-size: 14px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 1.15fr 0.55fr;
+            gap: 32px;
+            max-width: 1180px;
+            margin: 36px auto;
+            padding: 0 24px 36px;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 16px;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: #f7f7f7;
+            padding: 28px;
+            min-height: 420px;
+            border-radius: 8px;
+            display: flex;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(220px, 1fr));
+            gap: 24px;
+            align-items: start;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #d2d2d2;
+            border-radius: 10px;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 240px;
+        }
+
+        .card-head {
+            background-color: #2f2f2f;
+            color: #fff;
+            padding: 18px 20px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .card-body {
+            padding: 18px 20px 22px;
+            color: #444;
+            line-height: 1.75;
+            flex: 1;
+        }
+
+        @media (max-width: 960px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .cards-grid {
+                grid-template-columns: repeat(2, minmax(220px, 1fr));
+            }
+        }
+
+        @media (max-width: 680px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <i>My Website</i>
+        <div class="nav-links">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </nav>
+
+    <div class="layout">
+        <div class="main-content">
+            <section class="hero">
+                <h1>This is the main heading</h1>
+                <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+            </section>
+
+            <section class="cards-grid">
+                <article class="card">
+                    <div class="card-head">Card One</div>
+                    <div class="card-body">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado.</div>
+                </article>
+                <article class="card">
+                    <div class="card-head">Card Two</div>
+                    <div class="card-body">Daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.</div>
+                </article>
+                <article class="card">
+                    <div class="card-head">Card Three</div>
+                    <div class="card-body">Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</div>
+                </article>
+                <article class="card">
+                    <div class="card-head">Card Four</div>
+                    <div class="card-body">Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</div>
+                </article>
+                <article class="card">
+                    <div class="card-head">Card Five</div>
+                    <div class="card-body">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</div>
+                </article>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            Have you discovered all of the other excellent content on this website?
+        </aside>
+    </div>
+</body>
+
+</html>

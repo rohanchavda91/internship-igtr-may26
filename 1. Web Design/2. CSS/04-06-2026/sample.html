@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Layout</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#eee;
+        }
+
+        /* Navbar */
+        nav{
+            background:#333;
+            color:white;
+            padding:20px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+        }
+
+        /* Main Layout */
+        .container{
+            display:flex;
+            padding:20px;
+            gap:20px;
+        }
+
+        .content{
+            flex:3;
+        }
+
+        .sidebar{
+            flex:1;
+            background:#333;
+            color:white;
+            padding:20px;
+            min-height:500px;
+        }
+
+        /* Cards */
+        .cards{
+            display:flex;
+            flex-wrap:wrap;
+            gap:15px;
+            margin-top:20px;
+        }
+
+        .card{
+            width:280px;
+            border:3px solid black;
+            background:white;
+        }
+
+        .card h2{
+            background:#333;
+            color:white;
+            padding:15px;
+        }
+
+        .card p{
+            padding:15px;
+            line-height:1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2><i>My Website</i></h2>
+
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="content">
+
+            <h1>This is the main heading</h1>
+
+            <br>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem, consequatur.
+            </p>
+
+            <br>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, temporibus.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h2>Card One</h2>
+                    <p>Card content goes here.</p>
+                </div>
+
+                <div class="card">
+                    <h2>Card Two</h2>
+                    <p>Card content goes here.</p>
+                </div>
+
+                <div class="card">
+                    <h2>Card Three</h2>
+                    <p>Card content goes here.</p>
+                </div>
+
+                <div class="card">
+                    <h2>Card Four</h2>
+                    <p>Card content goes here.</p>
+                </div>
+
+                <div class="card">
+                    <h2>Card Five</h2>
+                    <p>Card content goes here.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="sidebar">
+            <p>
+                Have you discovered all of the other excellent content on this website?
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

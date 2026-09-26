@@ -1,0 +1,115 @@
+<!-- Task : Basic Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+    <style>
+        * {
+            font-family: 'Calibri', 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        fieldset{
+            border: 2px solid #4CAF50;
+            padding: 20px;
+            margin: 20px;
+            width: 50%;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], select {
+            width: 40%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: block;
+        }
+        input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus {
+            outline: none;
+            border: 2px solid #4CAF50;
+            box-shadow: 0 0 5px 0 gray;
+        }
+
+        .fnh, .lnh, .emh, .phh{
+            display: none;
+        }
+
+        #fname:focus ~ .fnh{
+            display: block;
+        }
+
+        #fname:not(:focus) ~ .fnh{
+            display: none;
+        }
+
+        #lname:focus ~ .lnh{
+            display: block;
+        }
+
+        #lname:not(:focus) ~ .lnh{
+            display: none;
+        }
+
+        #email:focus ~ .emh{
+            display: block;
+        }
+
+        #email:not(:focus) ~ .emh{
+            display: none;
+        }
+
+        #phone:focus ~ .phh{
+            display: block;
+        }
+
+        #phone:not(:focus) ~ .phh{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Basic Form</h1> <hr>
+    <fieldset>
+        <legend>Sample Registration Form</legend>
+        <label>First Name: </label>
+        <br> <input type="text" id="fname"> <br>
+        <span class="fnh">John</span><br>
+        <label>Last Name: </label> <br> <input type="text" id="lname"> <br>
+        <span class="lnh">Doe</span><br>
+        <label>Email: </label> <br> <input type="email" id="email"> <br>
+        <span class="emh">john.doe@example.com</span><br>
+        <label>Phone Number: </label> <br> <input type="tel" id="phone" maxlength="10"> <br>
+        <span class="phh">1234567890</span><br>
+        <label>Gender: </label> <br> <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other" disabled> Rather not to say <br>
+        <label>Hobbies: </label>
+        <br> <input type="checkbox" name="hobby" value="reading"> Reading
+        <input type="checkbox" name="hobby" value="traveling"> Traveling 
+        <input type="checkbox" name="hobby" value="cooking"> Cooking <br>
+
+        <label>City: </label>
+            <select>
+                <option> -- select --</option>
+                <option>New York</option>
+                <option>London</option>
+                <option>Tokyo</option>
+            </select> <br>
+
+        <input type="submit" value="Submit"> <input type="reset" value="Reset">
+
+    </fieldset>
+</body>
+</html>

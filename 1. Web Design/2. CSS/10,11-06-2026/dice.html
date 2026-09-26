@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-size: 54px;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1500px;
+        }
+
+        div {
+            border: 2px solid black;
+        }
+
+        div#cube {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            transform-style: preserve-3d;
+            animation: yRotate 10s infinite linear;
+            backface-visibility: visible;
+        }
+
+        div#top,
+        div#bottom,
+        div#left,
+        div#right,
+        div#front,
+        div#back {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            border: 2px black solid;
+            background: #ff000000;
+
+        }
+
+        div#top {
+            transform: rotateX(-90deg) translateY(250px) translateZ(250px);
+        }
+
+        div#bottom {
+            transform: rotateX(90deg) translateY(-250px) translateZ(250px);
+        }
+
+        div#front {
+            transform: translateZ(0px);
+        }
+
+        div#left {
+            transform: rotateY(-90deg) translateX(-250px) translateZ(250px);
+        }
+
+        div#right {
+            transform: rotateY(90deg) translateX(250px) translateZ(250px);
+        }
+
+        div#back {
+            transform: rotateY(180deg) translateZ(500px);
+        }
+
+        @keyframes yRotate {
+            from {
+                transform: rotatey(0deg);
+            }
+
+            to {
+                transform: rotatey(360deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cube">
+        <div id="top">
+            <img src="./1.png" height="500px" width="500px">
+        </div>
+        <div id="bottom">
+            <img src="./2.png" height="500px" width="500px">
+        </div>
+        <div id="front">
+            <img src="./3.png" height="500px" width="500px">
+        </div>
+        <div id="left">
+            <img src="./4.png" height="500px" width="500px">
+        </div>
+        <div id="right">
+            <img src="./5.png" height="500px" width="500px">
+        </div>
+        <div id="back">
+            <img src="./6.png" height="500px" width="500px">
+        </div>
+    </div>
+</body>
+
+</html>

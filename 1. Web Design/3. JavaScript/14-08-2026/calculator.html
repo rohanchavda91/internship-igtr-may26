@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin-top: 50px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td {
+            border: 1px solid #000;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+            user-select: none;
+        }
+        td:hover {
+            background-color: #eeeeee;
+        }
+        td[colspan="4"] {
+            font-size: 24px;
+            background-color: #f0f0f0;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <font size="52px" color="black">Calculator</font>
+    <hr>
+    <br>
+    <table>
+        <tr>
+            <td colspan="4" id="display" style="text-align: right;font-size:32px;">0</td>
+        </tr>
+        <tr>
+            <td onclick="percentage()">%</td>
+            <td onclick="clearEntry()">CE</td>
+            <td onclick="clearAll()">C</td>
+            <td onclick="backspace()">←</td>
+        </tr>
+        <tr>
+            <td onclick="reciprocal()">1/x</td>
+            <td onclick="square()">x²</td>
+            <td onclick="squareRoot()">√x</td>
+            <td onclick="operator('/')">/</td>
+        </tr>
+        <tr>
+            <td onclick="number('7')">7</td>
+            <td onclick="number('8')">8</td>
+            <td onclick="number('9')">9</td>
+            <td onclick="operator('*')">*</td>
+        </tr>
+        <tr>
+            <td onclick="number('4')">4</td>
+            <td onclick="number('5')">5</td>
+            <td onclick="number('6')">6</td>
+            <td onclick="operator('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="number('1')">1</td>
+            <td onclick="number('2')">2</td>
+            <td onclick="number('3')">3</td>
+            <td onclick="operator('+')">+</td>
+        </tr>
+        <tr>
+            <td onclick="plusMinus()">+/-</td>
+            <td onclick="number('0')">0</td>
+            <td onclick="decimal()">.</td>
+            <td onclick="calculate()">=</td>
+        </tr>
+    </table>
+    <script>
+        let currentValue = "0";
+        let previousValue = null;
+        let currentOperator = null;
+        let waitingForNewValue = false;
+        function updateDisplay() {
+            document.getElementById("display").textContent = currentValue;
+        }
+        function number(value) {
+            if (waitingForNewValue) {
+                currentValue = value;
+                waitingForNewValue = false;
+            } else if (currentValue === "0") {
+                currentValue = value;
+            } else {
+                currentValue += value;
+            }
+            updateDisplay();
+        }
+        function decimal() {
+            if (waitingForNewValue) {
+                currentValue = "0.";
+                waitingForNewValue = false;
+            } else if (!currentValue.includes(".")) {
+                currentValue += ".";
+            }
+            updateDisplay();
+        }
+        function operator(op) {
+            if (currentOperator !== null && !waitingForNewValue) {
+                calculate();
+            }
+            previousValue = parseFloat(currentValue);
+            currentOperator = op;
+            waitingForNewValue = true;
+        }
+        function calculate() {
+            if (currentOperator === null || previousValue === null) {
+                return;
+            }
+            let current = parseFloat(currentValue);
+            let result;
+            switch (currentOperator) {
+                case "+":
+                    result = previousValue + current;
+                    break;
+                case "-":
+                    result = previousValue - current;
+                    break;
+                case "*":
+                    result = previousValue * current;
+                    break;
+                case "/":
+                    if (current === 0) {
+                        currentValue = "Error";
+                        previousValue = null;
+                        currentOperator = null;
+                        updateDisplay();
+                        return;
+                    }
+                    result = previousValue / current;
+                    break;
+            }
+            currentValue = String(result);
+            previousValue = null;
+            currentOperator = null;
+            waitingForNewValue = true;
+            updateDisplay();
+        }
+        function clearEntry() {
+            currentValue = "0";
+            updateDisplay();
+        }
+        function clearAll() {
+            currentValue = "0";
+            previousValue = null;
+            currentOperator = null;
+            waitingForNewValue = false;
+            updateDisplay();
+        }
+        function backspace() {
+            if (currentValue.length > 1) {
+                currentValue = currentValue.slice(0, -1);
+            } else {
+                currentValue = "0";
+            }
+            updateDisplay();
+        }
+        function percentage() {
+            currentValue = String(parseFloat(currentValue) / 100);
+            updateDisplay();
+        }
+        function reciprocal() {
+            let value = parseFloat(currentValue);
+            if (value === 0) {
+                currentValue = "Error";
+            } else {
+                currentValue = String(1 / value);
+            }
+            updateDisplay();
+        }
+        function square() {
+            let value = parseFloat(currentValue);
+            currentValue = String(value * value);
+            updateDisplay();
+        }
+        function squareRoot() {
+            let value = parseFloat(currentValue);
+            if (value < 0) {
+                currentValue = "Error";
+            } else {
+                currentValue = String(Math.sqrt(value));
+            }
+            updateDisplay();
+        }
+        function plusMinus() {
+            if (currentValue !== "0") {
+                if (currentValue.startsWith("-")) {
+                    currentValue = currentValue.substring(1);
+                } else {
+                    currentValue = "-" + currentValue;
+                }
+            }
+            updateDisplay();
+        }
+    </script>
+</body>
+</html>

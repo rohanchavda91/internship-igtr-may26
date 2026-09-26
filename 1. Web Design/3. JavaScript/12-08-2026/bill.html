@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            align-self: center;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        font {
+            font-family: 'noto color emoji';
+        }
+
+        #title,
+        #billDetail {
+            background-color: #013b8d;
+            color: antiquewhite;
+        }
+
+        #title {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <div id="title">
+            <font face="noto color emoji">🛒</font>Shopping Bill
+        </div>
+        <table id="cust">
+            <tr id="custDetail">
+                <td>
+                    Customer Name: <p id="cName"></p>
+                    <br>
+                    Date : <p id="Date"></p>
+                </td>
+                <td>
+                    Bill No: <p id="id"></p>
+                    <br>
+                    Store: <p id="storeName"></p>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <table>
+            <tr id="billDetail">
+                <td>Product</td>
+                <td>Price (₹)</td>
+                <td>Quantity</td>
+                <td>Total (₹)</td>
+            </tr>
+            <tr id="tshirt">
+                <td>
+                    <font>👕</font>&nbsp;T-Shirts
+                </td>
+                <td>
+                    <p id="tprice">
+                </td>
+                <td>
+                    <p id="tqty">
+                </td>
+                <td>
+                    <p id="tttl"></p>
+                </td>
+            </tr>
+            <tr id="tshirt">
+                <td>
+                    <font>👖</font>&nbsp;Jeans
+                </td>
+                <td>
+                    <p id="jprice">
+                </td>
+                <td>
+                    <p id="jqty">
+                </td>
+                <td>
+                    <p id="jttl"></p>
+                </td>
+            </tr>
+            <tr id="tshirt">
+                <td>
+                    <font>👟</font>&nbsp;Shoes
+                </td>
+                <td>
+                    <p id="sprice">
+                </td>
+                <td>
+                    <p id="sqty">
+                </td>
+                <td>
+                    <p id="sttl"></p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>
+                    <p id="subtotal"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Discount (20%)</td>
+                <td>
+                    <p id="disc"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Amount after Discount</td>
+                <td>
+                    <p id="discAmt"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>GST (18%)</td>
+                <td>
+                    <p id="GstAmt"></p>
+                </td>
+            </tr>
+            <tr id="finalTotal">
+                <td>Final Amount</td>
+                <td>
+                    <p id="finalAmt"></p>
+                </td>
+            </tr>
+        </table>
+        <div>Thank you for visiting us! <br> Visit again!</div>
+    </div>
+    <script src="bill.js"></script>
+</body>
+
+</html>

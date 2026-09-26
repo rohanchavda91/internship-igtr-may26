@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#222;
+}
+
+header{
+    background:#071b52;
+    color:#fff;
+    padding:15px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h2{
+    font-size: 23px;
+    color: white;
+}
+.logo p{
+    font-size:14px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:17px;
+}
+
+.active{
+    border-bottom:2px solid #fff;
+    padding-bottom:5px;
+}
+
+.hero{
+    background:#eef5ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+    gap:70px;
+}
+
+.hero img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.hero-content h1{
+    font-size:48px;
+    color:#071b52;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:#071b52;
+    color:#fff;
+    padding:12px 30px;
+    text-decoration:none;
+    border-radius:6px;
+    display:inline-block;
+}
+
+section{
+    padding:45px 60px;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#071b52;
+}
+
+.about p{
+    width:75%;
+    margin:auto;
+    line-height:1.7;
+}
+
+.skill-box{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    margin-top:25px;
+}
+
+.skill i{
+    font-size:60px;
+}
+
+.skill h3{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.html{color:#e44d26;}
+.css{color:#2965f1;}
+.js{color:#f7df1e;}
+.boot{color:#7952b3;}
+.git{color:#f1502f;}
+
+form{
+    width:60%;
+    margin:auto;
+}
+
+.form-group{
+    display:flex;
+    align-items:center;
+    margin:15px 0;
+}
+
+table{
+    width: 70%;
+}
+
+input{
+    width: 60%;
+}
+
+label{
+    width:100px;
+    text-align:left;
+}
+
+input,
+textarea{
+    padding:10px;
+    border:1px solid #ccc;
+}
+
+textarea{
+    height:90px;
+    resize:none;
+}
+
+button{
+    margin-top:15px;
+    background:#071b52;
+    color:#fff;
+    border:none;
+    padding:10px 35px;
+    cursor:pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    background:#071b52;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}

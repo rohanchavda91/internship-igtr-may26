@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoShop Tutorial | W3Schools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-main"><a class="logo" href="../index.html"
+                aria-label="W3Schools home">W<sup>3</sup>Schools</a>
+            <label class="search-box">
+                <span class="sr-only">Search</span><input type="search" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+            </label>
+            <a class="header-link" href="#login">Log in</a>
+        </div>
+        <nav class="topnavcontainer" aria-label="Tutorial categories">
+            <div class="topnav" id="subtopnav">
+                <a href="../HTML/html.html">HTML</a>
+                <a href="../CSS/css.html">CSS</a>
+                <a href="../Js/js.html">JavaScript</a>
+                <a class="active" href="./ps.html">PhotoShop</a>
+                <a href="../Ai/ai.html">Illustrator</a>
+                <a href="#jquery">JQuery</a>
+            </div>
+        </nav>
+    </header>
+    <main class="course-page">
+        <aside class="course-sidebar" aria-label="Photoshop tutorial navigation">
+            <h2><span>Photoshop</span> Tutorial</h2>
+
+            <a class="active" href="#home">PHOTOSHOP HOME</a>
+
+            <details class="sidebar-group" open>
+                <summary>Photoshop Introduction</summary>
+                <a href="#introduction">Introduction</a>
+                <a href="#workspace">Workspace</a>
+                <a href="#tools">Tools Overview</a>
+                <a href="#panels">Panels</a>
+                <a href="#documents">Documents</a>
+                <a href="#exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Basics</summary>
+                <a href="#new-document">New Document</a>
+                <a href="#open-images">Open Images</a>
+                <a href="#save-files">Save Files</a>
+                <a href="#export">Export</a>
+                <a href="#zoom">Zoom and Navigation</a>
+                <a href="#undo-redo">Undo and Redo</a>
+                <a href="#basic-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Layers</summary>
+                <a href="#layers">Layers</a>
+                <a href="#create-layer">Creating Layers</a>
+                <a href="#layer-properties">Layer Properties</a>
+                <a href="#layer-order">Layer Order</a>
+                <a href="#layer-groups">Layer Groups</a>
+                <a href="#layer-opacity">Layer Opacity</a>
+                <a href="#layer-modes">Blend Modes</a>
+                <a href="#lock-layers">Lock Layers</a>
+                <a href="#layer-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Selections</summary>
+                <a href="#selection-basics">Selection Basics</a>
+                <a href="#marquee-tool">Marquee Tool</a>
+                <a href="#lasso-tool">Lasso Tool</a>
+                <a href="#polygonal-lasso">Polygonal Lasso</a>
+                <a href="#magnetic-lasso">Magnetic Lasso</a>
+                <a href="#object-selection">Object Selection</a>
+                <a href="#quick-selection">Quick Selection</a>
+                <a href="#magic-wand">Magic Wand</a>
+                <a href="#select-subject">Select Subject</a>
+                <a href="#selection-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Crop & Transform</summary>
+                <a href="#crop-tool">Crop Tool</a>
+                <a href="#straighten">Straighten Images</a>
+                <a href="#resize">Resize Images</a>
+                <a href="#transform">Transform</a>
+                <a href="#scale">Scale</a>
+                <a href="#rotate">Rotate</a>
+                <a href="#skew">Skew</a>
+                <a href="#perspective">Perspective</a>
+                <a href="#warp">Warp</a>
+                <a href="#transform-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Brushes</summary>
+                <a href="#brush-tool">Brush Tool</a>
+                <a href="#brush-settings">Brush Settings</a>
+                <a href="#brush-size">Brush Size</a>
+                <a href="#brush-hardness">Brush Hardness</a>
+                <a href="#brush-opacity">Brush Opacity</a>
+                <a href="#brush-flow">Brush Flow</a>
+                <a href="#brush-presets">Brush Presets</a>
+                <a href="#custom-brushes">Custom Brushes</a>
+                <a href="#brush-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Erasing</summary>
+                <a href="#eraser-tool">Eraser Tool</a>
+                <a href="#background-eraser">Background Eraser</a>
+                <a href="#magic-eraser">Magic Eraser</a>
+                <a href="#non-destructive-erasing">Non-Destructive Erasing</a>
+                <a href="#eraser-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Colors</summary>
+                <a href="#foreground-background">Foreground & Background</a>
+                <a href="#color-picker">Color Picker</a>
+                <a href="#swatches">Swatches</a>
+                <a href="#color-modes">Color Modes</a>
+                <a href="#rgb">RGB</a>
+                <a href="#cmyk">CMYK</a>
+                <a href="#grayscale">Grayscale</a>
+                <a href="#color-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Adjustments</summary>
+                <a href="#brightness-contrast">Brightness / Contrast</a>
+                <a href="#levels">Levels</a>
+                <a href="#curves">Curves</a>
+                <a href="#exposure">Exposure</a>
+                <a href="#vibrance">Vibrance</a>
+                <a href="#hue-saturation">Hue / Saturation</a>
+                <a href="#color-balance">Color Balance</a>
+                <a href="#black-white">Black & White</a>
+                <a href="#adjustment-layers">Adjustment Layers</a>
+                <a href="#adjustment-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Masks</summary>
+                <a href="#layer-masks">Layer Masks</a>
+                <a href="#mask-basics">Mask Basics</a>
+                <a href="#mask-refine">Refine Masks</a>
+                <a href="#clipping-masks">Clipping Masks</a>
+                <a href="#vector-masks">Vector Masks</a>
+                <a href="#mask-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Retouching</summary>
+                <a href="#spot-healing">Spot Healing Brush</a>
+                <a href="#healing-brush">Healing Brush</a>
+                <a href="#patch-tool">Patch Tool</a>
+                <a href="#clone-stamp">Clone Stamp</a>
+                <a href="#content-aware">Content-Aware Fill</a>
+                <a href="#red-eye">Red Eye Removal</a>
+                <a href="#skin-retouching">Skin Retouching</a>
+                <a href="#retouch-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Text</summary>
+                <a href="#text-tool">Type Tool</a>
+                <a href="#text-formatting">Text Formatting</a>
+                <a href="#character-panel">Character Panel</a>
+                <a href="#paragraph-panel">Paragraph Panel</a>
+                <a href="#fonts">Fonts</a>
+                <a href="#text-color">Text Color</a>
+                <a href="#text-warp">Warp Text</a>
+                <a href="#text-on-path">Text on a Path</a>
+                <a href="#text-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Shapes</summary>
+                <a href="#shape-tool">Shape Tool</a>
+                <a href="#rectangle-tool">Rectangle Tool</a>
+                <a href="#ellipse-tool">Ellipse Tool</a>
+                <a href="#polygon-tool">Polygon Tool</a>
+                <a href="#custom-shapes">Custom Shapes</a>
+                <a href="#shape-fill">Shape Fill</a>
+                <a href="#shape-stroke">Shape Stroke</a>
+                <a href="#shape-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Paths</summary>
+                <a href="#paths">Paths</a>
+                <a href="#pen-tool">Pen Tool</a>
+                <a href="#curvature-pen">Curvature Pen</a>
+                <a href="#path-selection">Path Selection</a>
+                <a href="#convert-path">Convert Path to Selection</a>
+                <a href="#path-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Filters</summary>
+                <a href="#filters">Filters</a>
+                <a href="#filter-gallery">Filter Gallery</a>
+                <a href="#blur-filters">Blur Filters</a>
+                <a href="#sharpen-filters">Sharpen Filters</a>
+                <a href="#noise-filters">Noise Filters</a>
+                <a href="#distort-filters">Distort Filters</a>
+                <a href="#stylize-filters">Stylize Filters</a>
+                <a href="#smart-filters">Smart Filters</a>
+                <a href="#filter-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Blending</summary>
+                <a href="#blend-modes">Blend Modes</a>
+                <a href="#normal-mode">Normal</a>
+                <a href="#multiply">Multiply</a>
+                <a href="#screen">Screen</a>
+                <a href="#overlay">Overlay</a>
+                <a href="#soft-light">Soft Light</a>
+                <a href="#hard-light">Hard Light</a>
+                <a href="#color-blending">Color Blending</a>
+                <a href="#blending-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Smart Objects</summary>
+                <a href="#smart-objects">Smart Objects</a>
+                <a href="#create-smart-object">Create Smart Object</a>
+                <a href="#edit-smart-object">Edit Smart Object</a>
+                <a href="#linked-smart-objects">Linked Smart Objects</a>
+                <a href="#smart-object-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Effects</summary>
+                <a href="#layer-effects">Layer Effects</a>
+                <a href="#drop-shadow">Drop Shadow</a>
+                <a href="#inner-shadow">Inner Shadow</a>
+                <a href="#outer-glow">Outer Glow</a>
+                <a href="#inner-glow">Inner Glow</a>
+                <a href="#bevel-emboss">Bevel & Emboss</a>
+                <a href="#stroke-effect">Stroke</a>
+                <a href="#effects-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Compositing</summary>
+                <a href="#compositing">Compositing</a>
+                <a href="#combine-images">Combining Images</a>
+                <a href="#remove-background">Remove Background</a>
+                <a href="#replace-background">Replace Background</a>
+                <a href="#green-screen">Green Screen</a>
+                <a href="#photo-manipulation">Photo Manipulation</a>
+                <a href="#compositing-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Photography</summary>
+                <a href="#photo-editing">Photo Editing</a>
+                <a href="#raw-files">RAW Files</a>
+                <a href="#camera-raw">Camera Raw</a>
+                <a href="#lens-correction">Lens Correction</a>
+                <a href="#perspective-correction">Perspective Correction</a>
+                <a href="#photo-enhancement">Photo Enhancement</a>
+                <a href="#photo-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Color Grading</summary>
+                <a href="#color-grading">Color Grading</a>
+                <a href="#color-toning">Color Toning</a>
+                <a href="#cinematic-color">Cinematic Color</a>
+                <a href="#duotone">Duotone</a>
+                <a href="#gradient-map">Gradient Map</a>
+                <a href="#color-grading-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Design</summary>
+                <a href="#graphic-design">Graphic Design</a>
+                <a href="#poster-design">Poster Design</a>
+                <a href="#banner-design">Banner Design</a>
+                <a href="#social-media-design">Social Media Design</a>
+                <a href="#thumbnail-design">Thumbnail Design</a>
+                <a href="#flyer-design">Flyer Design</a>
+                <a href="#design-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Advanced</summary>
+                <a href="#advanced-selections">Advanced Selections</a>
+                <a href="#advanced-masking">Advanced Masking</a>
+                <a href="#frequency-separation">Frequency Separation</a>
+                <a href="#dodge-burn">Dodge & Burn</a>
+                <a href="#advanced-retouching">Advanced Retouching</a>
+                <a href="#non-destructive-workflow">Non-Destructive Workflow</a>
+                <a href="#advanced-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Automation</summary>
+                <a href="#actions">Actions</a>
+                <a href="#action-recording">Recording Actions</a>
+                <a href="#batch-processing">Batch Processing</a>
+                <a href="#automation">Automation</a>
+                <a href="#scripts">Scripts</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Export</summary>
+                <a href="#file-formats">File Formats</a>
+                <a href="#psd">PSD</a>
+                <a href="#jpeg">JPEG</a>
+                <a href="#png">PNG</a>
+                <a href="#webp">WebP</a>
+                <a href="#tiff">TIFF</a>
+                <a href="#export-web">Export for Web</a>
+                <a href="#print-export">Print Export</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Photoshop Shortcuts</summary>
+                <a href="#keyboard-shortcuts">Keyboard Shortcuts</a>
+                <a href="#tool-shortcuts">Tool Shortcuts</a>
+                <a href="#layer-shortcuts">Layer Shortcuts</a>
+                <a href="#selection-shortcuts">Selection Shortcuts</a>
+                <a href="#shortcut-exercises">Exercises</a>
+            </details>
+
+            <a href="#project">Photoshop Project</a>
+            <a href="#certificate">Photoshop Certificate</a>
+            <a href="#examples">Photoshop Examples</a>
+            <a href="#references">Photoshop References</a>
+        </aside>
+
+        <section class="course-main" id="home">
+            <h1>Photoshop Tutorial</h1>
+
+            <p>
+                Photoshop is a powerful image editing and graphic design
+                application used for photo editing, digital artwork,
+                compositing, retouching, typography, and visual design.
+            </p>
+
+            <h2>Learning by Examples</h2>
+
+            <p>
+                Follow practical examples to learn Photoshop tools, layers,
+                selections, masks, adjustments, retouching, effects, and
+                professional design workflows.
+            </p>
+
+            <div class="w3-example">
+                <h3>Example</h3>
+
+                <div class="w3-code notranslate photoshopHigh">
+                    <span class="commentcolor" style="color:slategray">
+                        # Photoshop Example
+                    </span><br><br>
+
+                    <span class="propertycolor" style="color:#005cc5">
+                        Document
+                    </span>:
+                    <span class="valuecolor" style="color:#008000">
+                        1920 × 1080 px
+                    </span><br>
+
+                    <span class="propertycolor" style="color:#005cc5">
+                        Resolution
+                    </span>:
+                    <span class="valuecolor" style="color:#008000">
+                        72 PPI
+                    </span><br>
+
+                    <span class="propertycolor" style="color:#005cc5">
+                        Color Mode
+                    </span>:
+                    <span class="valuecolor" style="color:#008000">
+                        RGB
+                    </span><br>
+
+                    <span class="propertycolor" style="color:#005cc5">
+                        Background
+                    </span>:
+                    <span class="valuecolor" style="color:#008000">
+                        Transparent
+                    </span><br><br>
+
+                    <span class="commentcolor" style="color:slategray">
+                        # Add image → Create selection → Apply mask
+                    </span><br>
+
+                    <span class="commentcolor" style="color:slategray">
+                        # Adjust colors → Add text → Export
+                    </span>
+                </div>
+
+                <a class="w3-btn w3-margin-bottom" href="#photoshop-example" target="_blank" rel="noopener">
+                    Try it Yourself »
+                </a>
+            </div>
+
+            <div class="course-card">
+                <h2>Learn Photoshop</h2>
+
+                <p>
+                    Start with the Photoshop workspace and essential tools,
+                    then learn layers, selections, masks, brushes, colors,
+                    retouching, typography, filters, effects, compositing,
+                    photo editing, graphic design, automation, and
+                    professional export workflows.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-quick-links" aria-label="Footer shortcuts">
+            <a class="footer-logo" href="../index.html" aria-label="W3Schools home"><i class="fa-solid fa-code"
+                    aria-hidden="true"></i></a>
+            <a href="#plus">PLUS</a><a href="#spaces">SPACES</a><a href="#certified">GET CERTIFIED</a><a
+                href="#teachers">FOR TEACHERS</a><a href="#practice">PRACTICE</a><a
+                href="mailto:help@w3schools.com">CONTACT US</a>
+        </div>
+        <div class="footer-columns">
+            <section class="footer-column">
+                <h2>Top Tutorials</h2><a href="../HTML/html.html">HTML Tutorial</a><a href="../CSS/css.html">CSS
+                    Tutorial</a><a href="../Js/js.html">JavaScript Tutorial</a><a href="./ps.html">PhotoShop
+                    Tutorial</a><a href="../Ai/ai.html">Illustrator Tutorial</a><a href="#jquery">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Top References</h2><a href="#html-references">HTML Tutorial</a><a href="#css-references">CSS
+                    Tutorial</a><a href="#javascript-references">JavaScript Tutorial</a><a
+                    href="#photoshop-references">PhotoShop Tutorial</a><a href="#illustrator-references">Illustrator
+                    Tutorial</a><a href="#jquery-references">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Top Examples</h2><a href="#html-examples">HTML Tutorial</a><a href="#css-examples">CSS
+                    Tutorial</a><a href="#javascript-examples">JavaScript Tutorial</a><a
+                    href="#photoshop-examples">PhotoShop Tutorial</a><a href="#illustrator-examples">Illustrator
+                    Tutorial</a><a href="#jquery-examples">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Get Certified</h2><a href="#html-certificate">HTML Certificate</a><a href="#css-certificate">CSS
+                    Certificate</a><a href="#javascript-certificate">JavaScript Certificate</a><a
+                    href="#photoshop-certificate">PhotoShop Certificate</a><a
+                    href="#illustrator-certificate">Illustrator Certificate</a><a href="#jquery-certificate">JQuery
+                    Certificate</a>
+            </section>
+        </div>
+        <div class="footer-social">
+            <div class="social-icons"><a href="https://www.youtube.com/@w3schools" target="_blank" rel="noopener"
+                    aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a
+                    href="https://www.linkedin.com/company/w3schools.com/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a
+                    href="https://discord.com/invite/w3schools" target="_blank" rel="noopener" aria-label="Discord"><i
+                        class="fa-brands fa-discord"></i></a><a href="https://www.facebook.com/w3schoolscom/"
+                    target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a
+                    href="https://www.instagram.com/w3schools.com_official/" target="_blank" rel="noopener"
+                    aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="footer-social-links"><a href="#forum">FORUM</a><a href="#about">ABOUT</a><a
+                    href="#academy">ACADEMY</a></div>
+        </div>
+        <div class="footer-text">
+            <p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading and
+                learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot
+                warrant full correctness of all content.</p>
+            <p>While using W3Schools, you agree to have read and accepted our <a href="#terms">terms of use</a>, <a
+                    href="#cookies">cookies</a> and <a href="#privacy">privacy policy</a>.</p>
+            <p><a href="#copyright">Copyright 1999-2026</a> by Refsnes Data. All Rights Reserved. W3Schools is Powered
+                by W3.CSS.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

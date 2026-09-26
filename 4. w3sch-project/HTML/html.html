@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial | W3Schools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-main">
+            <a class="logo" href="../index.html" aria-label="W3Schools home">W<sup>3</sup>Schools</a>
+            <label class="search-box"><span class="sr-only">Search</span><input type="search" placeholder="Search..."><i
+                    class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i></label>
+            <a class="header-link" href="#login">Log in</a>
+        </div>
+        <nav class="topnavcontainer" aria-label="Tutorial categories">
+            <div class="topnav" id="subtopnav">
+                <a cla ss="active" href="./html.html">HTML</a>
+                <a href="../CSS/css.html">CSS</a>
+                <a href="../Js/js.html">JavaScript</a>
+                <a href="../Ps/ps.html">PhotoShop</a>
+                <a href="../Ai/ai.html">Illustrator</a>
+                <a href="#jquery">JQuery</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="course-page">
+        <aside class="course-sidebar" aria-label="HTML tutorial navigation">
+            <h2><span>HTML</span> Tutorial</h2>
+            <a class="active" href="#home">HTML HOME</a>
+            <details class="sidebar-group" open>
+                <summary>HTML Introduction</summary><a href="#introduction">Introduction</a><a
+                    href="#exercises">Exercises</a>
+            </details>
+            <a href="#editors">HTML Editors</a>
+            <details class="sidebar-group">
+                <summary>HTML Basic</summary><a href="#basic">Basic</a><a href="#basic-exercises">Exercises</a><a
+                    href="#basic-challenge">Code Challenge</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Elements</summary><a href="#elements">Elements</a><a
+                    href="#element-exercises">Exercises</a><a href="#element-challenge">Code Challenge</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Attributes</summary><a href="#attributes">Attributes</a><a
+                    href="#attribute-exercises">Exercises</a><a href="#attribute-challenge">Code Challenge</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Headings</summary><a href="#headings">Headings</a><a
+                    href="#heading-exercises">Exercises</a><a href="#heading-challenge">Code Challenge</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Paragraphs</summary><a href="#paragraphs">Paragraphs</a><a
+                    href="#paragraph-exercises">Exercises</a><a href="#paragraph-challenge">Code Challenge</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Styles</summary><a href="#styles">Styles</a><a href="#style-exercises">Exercises</a><a
+                    href="#style-challenge">Code Challenge</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Formatting</summary><a href="#formatting">Formatting</a><a
+                    href="#format-exercises">Exercises</a><a href="#format-challenge">Code Challenge</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Quotations</summary><a href="#quotations">Quotations</a><a
+                    href="#quotation-exercises">Exercises</a><a href="#quotation-challenge">Code Challenge</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Comments</summary><a href="#comments">Comments</a><a
+                    href="#comment-exercises">Exercises</a><a href="#comment-challenge">Code Challenge</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Colors</summary><a href="#colors">Colors</a><a href="#rgb">RGB</a><a href="#hex">HEX</a><a
+                    href="#hsl">HSL</a><a href="#color-exercises">Exercises</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML CSS</summary><a href="#html-css">CSS</a><a href="#css-exercises">Exercises</a><a
+                    href="#css-challenge">Code Challenge</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Links</summary><a href="#links">Links</a><a href="#link-colors">Link Colors</a><a
+                    href="#bookmarks">Link Bookmarks</a><a href="#link-exercises">Exercises</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Images</summary><a href="#images">Images</a><a href="#image-map">Image Map</a><a
+                    href="#background-images">Background Images</a><a href="#picture-element">Picture Element</a><a
+                    href="#image-exercises">Exercises</a>
+            </details>
+            <a href="#project">HTML Project</a><a href="#favicon">HTML Favicon</a><a href="#page-title">HTML Page
+                Title</a>
+            <details class="sidebar-group">
+                <summary>HTML Tables</summary><a href="#tables">Tables</a><a href="#table-borders">Table Borders</a><a
+                    href="#table-sizing">Table Sizes</a><a href="#table-headers">Table Headers</a><a
+                    href="#table-exercises">Exercises</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Lists</summary><a href="#lists">Lists</a><a href="#unordered-lists">Unordered Lists</a><a
+                    href="#ordered-lists">Ordered Lists</a><a href="#list-exercises">Exercises</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Forms</summary><a href="#forms">Forms</a><a href="#form-attributes">Form Attributes</a><a
+                    href="#form-elements">Form Elements</a><a href="#input-types">Input Types</a><a
+                    href="#form-exercises">Exercises</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Graphics</summary><a href="#canvas">Canvas</a><a href="#svg">SVG</a><a
+                    href="#graphics-challenge">Code Challenge</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML Media</summary><a href="#media">Media</a><a href="#video">Video</a><a
+                    href="#audio">Audio</a><a href="#youtube">YouTube</a>
+            </details>
+            <details class="sidebar-group">
+                <summary>HTML APIs</summary><a href="#web-apis">Web APIs</a><a href="#geolocation">Geolocation</a><a
+                    href="#drag-drop">Drag and Drop</a><a href="#web-storage">Web Storage</a>
+            </details>
+            <a href="#certificate">HTML Certificate</a><a href="#examples">HTML Examples</a><a href="#references">HTML
+                References</a>
+        </aside>
+        <section class="course-main" id="home">
+            <h1>HTML Tutorial</h1>
+            <p>HTML is the standard markup language for Web pages. With HTML you can create your own Website and learn
+                the building blocks of the web.</p>
+            <h2>Learning by Examples</h2>
+            <p>With our "Try it Yourself" editor, you can edit the HTML code and view the result in the browser:</p>
+            <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="doctypecolor" style="color:slategray">&lt;!DOCTYPE html&gt;</span><br>
+                    <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                            style="color:#999">&lt;</span>html<span class="tagcolor"
+                            style="color:#999">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                            style="color:#999">&lt;</span>head<span class="tagcolor"
+                            style="color:#999">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                            style="color:#999">&lt;</span>title<span class="tagcolor"
+                            style="color:#999">&gt;</span></span>Page Title<span class="tagnamecolor"
+                        style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>/title<span
+                            class="tagcolor" style="color:#999">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                            style="color:#999">&lt;</span>/head<span class="tagcolor"
+                            style="color:#999">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:#905">
+                        <span class="tagcolor" style="color:#999">&lt;
+                        </span>body<span class="tagcolor" style="color:#999">&gt;</span></span><br><br>
+                    <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                            style="color:#999">&lt;</span>h1<span class="tagcolor"
+                            style="color:#999">&gt;</span></span>This is a Heading<span class="tagnamecolor"
+                        style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>/h1<span
+                            class="tagcolor" style="color:#999">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                            style="color:#999">&lt;</span>p<span class="tagcolor"
+                            style="color:#999">&gt;</span></span>This is a paragraph.<span class="tagnamecolor"
+                        style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>/p<span class="tagcolor"
+                            style="color:#999">&gt;</span></span><br><br>
+                    <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                            style="color:#999">&lt;</span>/body<span class="tagcolor"
+                            style="color:#999">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                            style="color:#999">&lt;</span>/html<span class="tagcolor"
+                            style="color:#999">&gt;</span></span>
+                </div>
+                <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_default" target="_blank"
+                    rel="noopener">Try it Yourself »</a>
+            </div>
+            <div class="course-card">
+                <h2>Learn HTML</h2>
+                <p>Start with the basics, practice each concept, and build pages with headings, links, images, lists,
+                    tables, forms, and more.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-quick-links" aria-label="Footer shortcuts"><a class="footer-logo" href="../index.html"
+                aria-label="W3Schools home"><i class="fa-solid fa-code" aria-hidden="true"></i></a><a
+                href="#plus">PLUS</a><a href="#spaces">SPACES</a><a href="#certified">GET CERTIFIED</a><a
+                href="#teachers">FOR TEACHERS</a><a href="#practice">PRACTICE</a><a
+                href="mailto:help@w3schools.com">CONTACT US</a></div>
+        <div class="footer-columns">
+            <section class="footer-column">
+                <h2>Top Tutorials</h2><a href="./html.html">HTML Tutorial</a><a href="../CSS/css.html">CSS
+                    Tutorial</a><a href="../Js/js.html">JavaScript Tutorial</a><a href="../Ps/ps.html">PhotoShop
+                    Tutorial</a><a href="../Ai/ai.html">Illustrator Tutorial</a><a href="#jquery">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Top References</h2><a href="#html-references">HTML Tutorial</a><a href="#css-references">CSS
+                    Tutorial</a><a href="#javascript-references">JavaScript Tutorial</a><a
+                    href="#photoshop-references">PhotoShop Tutorial</a><a href="#illustrator-references">Illustrator
+                    Tutorial</a><a href="#jquery-references">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Top Examples</h2><a href="#html-examples">HTML Tutorial</a><a href="#css-examples">CSS
+                    Tutorial</a><a href="#javascript-examples">JavaScript Tutorial</a><a
+                    href="#photoshop-examples">PhotoShop Tutorial</a><a href="#illustrator-examples">Illustrator
+                    Tutorial</a><a href="#jquery-examples">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Get Certified</h2><a href="#html-certificate">HTML Certificate</a><a href="#css-certificate">CSS
+                    Certificate</a><a href="#javascript-certificate">JavaScript Certificate</a><a
+                    href="#photoshop-certificate">PhotoShop Certificate</a><a
+                    href="#illustrator-certificate">Illustrator Certificate</a><a href="#jquery-certificate">JQuery
+                    Certificate</a>
+            </section>
+        </div>
+        <div class="footer-social">
+            <div class="social-icons"><a href="https://www.youtube.com/@w3schools" target="_blank" rel="noopener"
+                    aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a
+                    href="https://www.linkedin.com/company/w3schools.com/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a
+                    href="https://discord.com/invite/w3schools" target="_blank" rel="noopener" aria-label="Discord"><i
+                        class="fa-brands fa-discord"></i></a><a href="https://www.facebook.com/w3schoolscom/"
+                    target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a
+                    href="https://www.instagram.com/w3schools.com_official/" target="_blank" rel="noopener"
+                    aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="footer-social-links"><a href="#forum">FORUM</a><a href="#about">ABOUT</a><a
+                    href="#academy">ACADEMY</a></div>
+        </div>
+        <div class="footer-text">
+            <p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading and
+                learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot
+                warrant full correctness of all content.</p>
+            <p>While using W3Schools, you agree to have read and accepted our <a href="#terms">terms of use</a>, <a
+                    href="#cookies">cookies</a> and <a href="#privacy">privacy policy</a>.</p>
+            <p><a href="#copyright">Copyright 1999-2026</a> by Refsnes Data. All Rights Reserved. W3Schools is Powered
+                by W3.CSS.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

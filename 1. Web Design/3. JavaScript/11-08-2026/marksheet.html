@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        table{
+            width: 350px;
+            height: auto;
+        }
+        table,tr,td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        td{
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>Name: </td>
+            <td>
+                <p id="studName"> Name Goes Here</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td>
+                <p id="physics">Physics</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Chemistry</td>
+            <td>
+                <p id="chemistry">Chemistry</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td>
+                <p id="maths">Mathematics</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Total </td>
+            <td><p id="total"></p></td>
+        </tr>
+        <tr>
+            <td>Percentage</td>
+            <td><p id="per"></p></td>
+        </tr>
+
+    </table>
+
+
+    <script>
+        let studName = "Student",
+            rolNub = 21,
+            sub1 = 98,
+            sub2 = 89,
+            sub3 = 95
+            ;
+        let total = sub1 + sub2 + sub3,
+            per = total * 100 / 300;
+
+        document.getElementById("studName").innerHTML = studName;
+        document.getElementById("physics").innerHTML = sub1;
+        document.getElementById("chemistry").innerHTML = sub2;
+        document.getElementById("maths").innerHTML = sub3;
+        document.getElementById("total").innerHTML = total;
+        document.getElementById("per").innerHTML = per+" %";
+
+        
+
+    </script>
+</body>
+
+</html>

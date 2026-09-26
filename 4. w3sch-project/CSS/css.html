@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial | W3Schools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-main"><a class="logo" href="../index.html"
+                aria-label="W3Schools home">W<sup>3</sup>Schools</a><label class="search-box"><span
+                    class="sr-only">Search</span><input type="search" placeholder="Search..."><i
+                    class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i></label><a
+                class="header-link" href="#login">Log in</a></div>
+        <nav class="topnavcontainer" aria-label="Tutorial categories">
+            <div class="topnav" id="subtopnav"><a href="../HTML/html.html">HTML</a><a class="active"
+                    href="./css.html">CSS</a><a href="../Js/js.html">JavaScript</a><a
+                    href="../Ps/ps.html">PhotoShop</a><a href="../Ai/ai.html">Illustrator</a><a
+                    href="#jquery">JQuery</a></div>
+        </nav>
+    </header>
+    <main class="course-page">
+        <aside class="course-sidebar" aria-label="CSS tutorial navigation">
+            <h2><span>CSS</span> Tutorial</h2>
+
+            <a class="active" href="#home">CSS HOME</a>
+
+            <details class="sidebar-group" open>
+                <summary>CSS Introduction</summary>
+                <a href="#introduction">Introduction</a>
+                <a href="#syntax">Syntax</a>
+                <a href="#selectors">Selectors</a>
+                <a href="#exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS How To</summary>
+                <a href="#how-to">How To</a>
+                <a href="#external-css">External CSS</a>
+                <a href="#internal-css">Internal CSS</a>
+                <a href="#inline-css">Inline CSS</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Colors</summary>
+                <a href="#colors">Colors</a>
+                <a href="#rgb">RGB</a>
+                <a href="#hex">HEX</a>
+                <a href="#hsl">HSL</a>
+                <a href="#opacity">Opacity</a>
+                <a href="#color-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Backgrounds</summary>
+                <a href="#background-color">Background Color</a>
+                <a href="#background-image">Background Image</a>
+                <a href="#background-repeat">Background Repeat</a>
+                <a href="#background-position">Background Position</a>
+                <a href="#background-size">Background Size</a>
+                <a href="#background-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Borders</summary>
+                <a href="#borders">Borders</a>
+                <a href="#border-width">Border Width</a>
+                <a href="#border-style">Border Style</a>
+                <a href="#border-color">Border Color</a>
+                <a href="#border-radius">Border Radius</a>
+                <a href="#border-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Margins</summary>
+                <a href="#margin">Margin</a>
+                <a href="#margin-sides">Margin Sides</a>
+                <a href="#margin-collapse">Margin Collapse</a>
+                <a href="#margin-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Padding</summary>
+                <a href="#padding">Padding</a>
+                <a href="#padding-sides">Padding Sides</a>
+                <a href="#padding-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Height and Width</summary>
+                <a href="#height-width">Height and Width</a>
+                <a href="#max-width">Max Width</a>
+                <a href="#box-sizing">Box Sizing</a>
+                <a href="#dimension-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Box Model</summary>
+                <a href="#box-model">Box Model</a>
+                <a href="#box-model-width">Width and Height</a>
+                <a href="#box-model-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Text</summary>
+                <a href="#text-color">Text Color</a>
+                <a href="#text-alignment">Text Alignment</a>
+                <a href="#text-decoration">Text Decoration</a>
+                <a href="#text-transformation">Text Transformation</a>
+                <a href="#text-spacing">Text Spacing</a>
+                <a href="#text-shadow">Text Shadow</a>
+                <a href="#text-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Fonts</summary>
+                <a href="#font-family">Font Family</a>
+                <a href="#font-size">Font Size</a>
+                <a href="#font-style">Font Style</a>
+                <a href="#font-weight">Font Weight</a>
+                <a href="#web-safe-fonts">Web Safe Fonts</a>
+                <a href="#google-fonts">Google Fonts</a>
+                <a href="#font-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Icons</summary>
+                <a href="#icons">Icons</a>
+                <a href="#font-awesome">Font Awesome</a>
+                <a href="#bootstrap-icons">Bootstrap Icons</a>
+                <a href="#google-icons">Google Icons</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Links</summary>
+                <a href="#link-styling">Link Styling</a>
+                <a href="#link-states">Link States</a>
+                <a href="#link-decoration">Link Decoration</a>
+                <a href="#link-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Lists</summary>
+                <a href="#list-style">List Style</a>
+                <a href="#list-image">List Image</a>
+                <a href="#list-position">List Position</a>
+                <a href="#list-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Tables</summary>
+                <a href="#table-borders">Table Borders</a>
+                <a href="#table-size">Table Size</a>
+                <a href="#table-alignment">Table Alignment</a>
+                <a href="#table-style">Table Style</a>
+                <a href="#table-responsive">Responsive Tables</a>
+                <a href="#table-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Display</summary>
+                <a href="#display">Display</a>
+                <a href="#visibility">Visibility</a>
+                <a href="#display-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Position</summary>
+                <a href="#position">Position</a>
+                <a href="#static">Static</a>
+                <a href="#relative">Relative</a>
+                <a href="#fixed">Fixed</a>
+                <a href="#absolute">Absolute</a>
+                <a href="#sticky">Sticky</a>
+                <a href="#z-index">Z-Index</a>
+                <a href="#position-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Overflow</summary>
+                <a href="#overflow">Overflow</a>
+                <a href="#overflow-x-y">Overflow X and Y</a>
+                <a href="#overflow-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Float</summary>
+                <a href="#float">Float</a>
+                <a href="#clear">Clear</a>
+                <a href="#clearfix">Clearfix</a>
+                <a href="#float-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Combinators</summary>
+                <a href="#descendant">Descendant</a>
+                <a href="#child">Child</a>
+                <a href="#adjacent-sibling">Adjacent Sibling</a>
+                <a href="#general-sibling">General Sibling</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Pseudo-classes</summary>
+                <a href="#pseudo-classes">Pseudo-classes</a>
+                <a href="#hover">Hover</a>
+                <a href="#focus">Focus</a>
+                <a href="#first-child">First Child</a>
+                <a href="#pseudo-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Pseudo-elements</summary>
+                <a href="#pseudo-elements">Pseudo-elements</a>
+                <a href="#before-after">Before and After</a>
+                <a href="#first-letter">First Letter</a>
+                <a href="#first-line">First Line</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Opacity</summary>
+                <a href="#opacity-property">Opacity</a>
+                <a href="#transparent-hover">Transparent Hover</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Navigation Bars</summary>
+                <a href="#navbar">Navigation Bar</a>
+                <a href="#vertical-navbar">Vertical Navbar</a>
+                <a href="#horizontal-navbar">Horizontal Navbar</a>
+                <a href="#dropdown-navbar">Dropdown Navbar</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Dropdowns</summary>
+                <a href="#dropdowns">Dropdowns</a>
+                <a href="#dropdown-menu">Dropdown Menu</a>
+                <a href="#dropdown-content">Dropdown Content</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Images</summary>
+                <a href="#image-opacity">Image Opacity</a>
+                <a href="#image-filters">Image Filters</a>
+                <a href="#image-shapes">Image Shapes</a>
+                <a href="#image-gallery">Image Gallery</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Forms</summary>
+                <a href="#form-inputs">Input Fields</a>
+                <a href="#form-padding">Input Padding</a>
+                <a href="#form-borders">Input Borders</a>
+                <a href="#form-focus">Input Focus</a>
+                <a href="#form-select">Styling Select</a>
+                <a href="#form-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Counters</summary>
+                <a href="#counters">Counters</a>
+                <a href="#counter-reset">Counter Reset</a>
+                <a href="#counter-increment">Counter Increment</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Units</summary>
+                <a href="#units">Units</a>
+                <a href="#absolute-units">Absolute Units</a>
+                <a href="#relative-units">Relative Units</a>
+                <a href="#viewport-units">Viewport Units</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Specificity</summary>
+                <a href="#specificity">Specificity</a>
+                <a href="#specificity-calculation">Calculating Specificity</a>
+                <a href="#important">!important</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Math Functions</summary>
+                <a href="#calc">calc()</a>
+                <a href="#min">min()</a>
+                <a href="#max">max()</a>
+                <a href="#clamp">clamp()</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Advanced</summary>
+                <a href="#variables">CSS Variables</a>
+                <a href="#custom-properties">Custom Properties</a>
+                <a href="#filters">CSS Filters</a>
+                <a href="#object-fit">Object Fit</a>
+                <a href="#object-position">Object Position</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Flexbox</summary>
+                <a href="#flexbox">Flexbox</a>
+                <a href="#flex-container">Flex Container</a>
+                <a href="#flex-direction">Flex Direction</a>
+                <a href="#justify-content">Justify Content</a>
+                <a href="#align-items">Align Items</a>
+                <a href="#flex-wrap">Flex Wrap</a>
+                <a href="#flex-items">Flex Items</a>
+                <a href="#flex-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Grid</summary>
+                <a href="#grid">Grid</a>
+                <a href="#grid-container">Grid Container</a>
+                <a href="#grid-columns">Grid Columns</a>
+                <a href="#grid-rows">Grid Rows</a>
+                <a href="#grid-gap">Grid Gap</a>
+                <a href="#grid-items">Grid Items</a>
+                <a href="#grid-template">Grid Template Areas</a>
+                <a href="#grid-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Responsive</summary>
+                <a href="#responsive">Responsive Web Design</a>
+                <a href="#media-queries">Media Queries</a>
+                <a href="#responsive-images">Responsive Images</a>
+                <a href="#responsive-text">Responsive Text</a>
+                <a href="#responsive-layout">Responsive Layout</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Transitions</summary>
+                <a href="#transitions">Transitions</a>
+                <a href="#transition-property">Transition Property</a>
+                <a href="#transition-duration">Transition Duration</a>
+                <a href="#transition-timing">Transition Timing</a>
+                <a href="#transition-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Animations</summary>
+                <a href="#animations">Animations</a>
+                <a href="#keyframes">Keyframes</a>
+                <a href="#animation-duration">Animation Duration</a>
+                <a href="#animation-delay">Animation Delay</a>
+                <a href="#animation-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Transforms</summary>
+                <a href="#transforms">Transforms</a>
+                <a href="#translate">Translate</a>
+                <a href="#rotate">Rotate</a>
+                <a href="#scale">Scale</a>
+                <a href="#skew">Skew</a>
+                <a href="#transform-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>CSS Variables</summary>
+                <a href="#css-variables">Variables</a>
+                <a href="#var-function">var()</a>
+                <a href="#variable-scope">Variable Scope</a>
+                <a href="#variables-exercises">Exercises</a>
+            </details>
+
+            <a href="#project">CSS Project</a>
+            <a href="#certificate">CSS Certificate</a>
+            <a href="#examples">CSS Examples</a>
+            <a href="#references">CSS References</a>
+        </aside>
+
+        <section class="course-main" id="home">
+            <h1>CSS Tutorial</h1>
+
+            <p>
+                CSS is the language we use to style an HTML document.
+                CSS describes how HTML elements should be displayed on screen,
+                on paper, or in other media.
+            </p>
+
+            <h2>Learning by Examples</h2>
+
+            <p>
+                With our "Try it Yourself" editor, you can edit the CSS code
+                and view the result in the browser:
+            </p>
+
+            <div class="w3-example">
+                <h3>Example</h3>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="tagnamecolor" style="color:#905">body</span>
+                    <span style="color:#999">{</span><br>
+
+                    &nbsp;&nbsp;<span class="csspropertycolor" style="color:#005cc5">background-color</span>:
+                    <span class="cssnumbercolor" style="color:#008000">lightblue</span>;<br>
+
+                    <span style="color:#999">}</span><br><br>
+
+                    <span class="tagnamecolor" style="color:#905">h1</span>
+                    <span style="color:#999">{</span><br>
+
+                    &nbsp;&nbsp;<span class="csspropertycolor" style="color:#005cc5">color</span>:
+                    <span class="cssnumbercolor" style="color:#008000">navy</span>;<br>
+
+                    &nbsp;&nbsp;<span class="csspropertycolor" style="color:#005cc5">margin-left</span>:
+                    <span class="cssnumbercolor" style="color:#008000">20px</span>;<br>
+
+                    <span style="color:#999">}</span><br><br>
+
+                    <span class="tagnamecolor" style="color:#905">p</span>
+                    <span style="color:#999">{</span><br>
+
+                    &nbsp;&nbsp;<span class="csspropertycolor" style="color:#005cc5">font-size</span>:
+                    <span class="cssnumbercolor" style="color:#008000">18px</span>;<br>
+
+                    <span style="color:#999">}</span>
+                </div>
+
+                <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss_default" target="_blank"
+                    rel="noopener">
+                    Try it Yourself »
+                </a>
+            </div>
+
+            <div class="course-card">
+                <h2>Learn CSS</h2>
+
+                <p>
+                    Start with the basics, practice selectors and properties,
+                    and learn how to style colors, backgrounds, text, layouts,
+                    forms, animations, Flexbox, Grid, and responsive websites.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-quick-links" aria-label="Footer shortcuts"><a class="footer-logo" href="../index.html"
+                aria-label="W3Schools home"><i class="fa-solid fa-code" aria-hidden="true"></i></a><a
+                href="#plus">PLUS</a><a href="#spaces">SPACES</a><a href="#certified">GET CERTIFIED</a><a
+                href="#teachers">FOR TEACHERS</a><a href="#practice">PRACTICE</a><a
+                href="mailto:help@w3schools.com">CONTACT US</a></div>
+        <div class="footer-columns">
+            <section class="footer-column">
+                <h2>Top Tutorials</h2><a href="../HTML/html.html">HTML Tutorial</a><a href="./css.html">CSS
+                    Tutorial</a><a href="../Js/js.html">JavaScript Tutorial</a><a href="../Ps/ps.html">PhotoShop
+                    Tutorial</a><a href="../Ai/ai.html">Illustrator Tutorial</a><a href="#jquery">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Top References</h2><a href="#html-references">HTML Tutorial</a><a href="#css-references">CSS
+                    Tutorial</a><a href="#javascript-references">JavaScript Tutorial</a><a
+                    href="#photoshop-references">PhotoShop Tutorial</a><a href="#illustrator-references">Illustrator
+                    Tutorial</a><a href="#jquery-references">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Top Examples</h2><a href="#html-examples">HTML Tutorial</a><a href="#css-examples">CSS
+                    Tutorial</a><a href="#javascript-examples">JavaScript Tutorial</a><a
+                    href="#photoshop-examples">PhotoShop Tutorial</a><a href="#illustrator-examples">Illustrator
+                    Tutorial</a><a href="#jquery-examples">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Get Certified</h2><a href="#html-certificate">HTML Certificate</a><a href="#css-certificate">CSS
+                    Certificate</a><a href="#javascript-certificate">JavaScript Certificate</a><a
+                    href="#photoshop-certificate">PhotoShop Certificate</a><a
+                    href="#illustrator-certificate">Illustrator Certificate</a><a href="#jquery-certificate">JQuery
+                    Certificate</a>
+            </section>
+        </div>
+        <div class="footer-social">
+            <div class="social-icons"><a href="https://www.youtube.com/@w3schools" target="_blank" rel="noopener"
+                    aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a
+                    href="https://www.linkedin.com/company/w3schools.com/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a
+                    href="https://discord.com/invite/w3schools" target="_blank" rel="noopener" aria-label="Discord"><i
+                        class="fa-brands fa-discord"></i></a><a href="https://www.facebook.com/w3schoolscom/"
+                    target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a
+                    href="https://www.instagram.com/w3schools.com_official/" target="_blank" rel="noopener"
+                    aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="footer-social-links"><a href="#forum">FORUM</a><a href="#about">ABOUT</a><a
+                    href="#academy">ACADEMY</a></div>
+        </div>
+        <div class="footer-text">
+            <p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading and
+                learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot
+                warrant full correctness of all content.</p>
+            <p>While using W3Schools, you agree to have read and accepted our <a href="#terms">terms of use</a>, <a
+                    href="#cookies">cookies</a> and <a href="#privacy">privacy policy</a>.</p>
+            <p><a href="#copyright">Copyright 1999-2026</a> by Refsnes Data. All Rights Reserved. W3Schools is Powered
+                by W3.CSS.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

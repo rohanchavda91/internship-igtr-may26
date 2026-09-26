@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tutorial | W3Schools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-main"><a class="logo" href="../index.html"
+                aria-label="W3Schools home">W<sup>3</sup>Schools</a><label class="search-box"><span
+                    class="sr-only">Search</span><input type="search" placeholder="Search..."><i
+                    class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i></label><a
+                class="header-link" href="#login">Log in</a></div>
+        <nav class="topnavcontainer" aria-label="Tutorial categories">
+            <div class="topnav" id="subtopnav"><a href="../HTML/html.html">HTML</a><a href="../CSS/css.html">CSS</a><a
+                    href="../Js/js.html">JavaScript</a><a href="../Ps/ps.html">PhotoShop</a><a href="./ai.html"
+                    class="active">Illustrator</a><a href="#jquery">JQuery</a></div>
+        </nav>
+    </header>
+    <main class="course-page">
+        <aside class="course-sidebar" aria-label="Illustrator tutorial navigation">
+            <h2><span>Illustrator</span> Tutorial</h2>
+
+            <a class="active" href="#home">ILLUSTRATOR HOME</a>
+
+            <details class="sidebar-group" open>
+                <summary>Illustrator Introduction</summary>
+                <a href="#introduction">Introduction</a>
+                <a href="#workspace">Workspace</a>
+                <a href="#tools">Tools Overview</a>
+                <a href="#panels">Panels</a>
+                <a href="#artboards">Artboards</a>
+                <a href="#exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Basics</summary>
+                <a href="#new-document">New Document</a>
+                <a href="#open-files">Open Files</a>
+                <a href="#save-files">Save Files</a>
+                <a href="#export">Export</a>
+                <a href="#zoom-navigation">Zoom & Navigation</a>
+                <a href="#undo-redo">Undo & Redo</a>
+                <a href="#basic-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Selection</summary>
+                <a href="#selection-tool">Selection Tool</a>
+                <a href="#direct-selection">Direct Selection</a>
+                <a href="#group-selection">Group Selection</a>
+                <a href="#lasso-tool">Lasso Tool</a>
+                <a href="#magic-wand">Magic Wand</a>
+                <a href="#select-same">Select Same</a>
+                <a href="#selection-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Shapes</summary>
+                <a href="#rectangle">Rectangle Tool</a>
+                <a href="#ellipse">Ellipse Tool</a>
+                <a href="#polygon">Polygon Tool</a>
+                <a href="#star">Star Tool</a>
+                <a href="#line">Line Tool</a>
+                <a href="#rounded-rectangle">Rounded Rectangle</a>
+                <a href="#shape-builder">Shape Builder</a>
+                <a href="#shapes-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Pen Tool</summary>
+                <a href="#pen-tool">Pen Tool</a>
+                <a href="#anchor-points">Anchor Points</a>
+                <a href="#handles">Direction Handles</a>
+                <a href="#straight-paths">Straight Paths</a>
+                <a href="#curved-paths">Curved Paths</a>
+                <a href="#add-anchor">Add Anchor Point</a>
+                <a href="#delete-anchor">Delete Anchor Point</a>
+                <a href="#pen-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Paths</summary>
+                <a href="#paths">Paths</a>
+                <a href="#pathfinder">Pathfinder</a>
+                <a href="#unite">Unite</a>
+                <a href="#minus-front">Minus Front</a>
+                <a href="#intersect">Intersect</a>
+                <a href="#exclude">Exclude</a>
+                <a href="#offset-path">Offset Path</a>
+                <a href="#path-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Colors</summary>
+                <a href="#color-picker">Color Picker</a>
+                <a href="#swatches">Swatches</a>
+                <a href="#color-panel">Color Panel</a>
+                <a href="#rgb">RGB</a>
+                <a href="#cmyk">CMYK</a>
+                <a href="#global-colors">Global Colors</a>
+                <a href="#spot-colors">Spot Colors</a>
+                <a href="#color-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Gradients</summary>
+                <a href="#gradient-tool">Gradient Tool</a>
+                <a href="#linear-gradient">Linear Gradient</a>
+                <a href="#radial-gradient">Radial Gradient</a>
+                <a href="#freeform-gradient">Freeform Gradient</a>
+                <a href="#gradient-panel">Gradient Panel</a>
+                <a href="#gradient-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Strokes</summary>
+                <a href="#stroke">Stroke</a>
+                <a href="#stroke-width">Stroke Width</a>
+                <a href="#stroke-cap">Stroke Caps</a>
+                <a href="#stroke-corner">Stroke Corners</a>
+                <a href="#dashed-lines">Dashed Lines</a>
+                <a href="#variable-width">Variable Width</a>
+                <a href="#stroke-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Layers</summary>
+                <a href="#layers">Layers</a>
+                <a href="#layer-panel">Layers Panel</a>
+                <a href="#create-layer">Create Layers</a>
+                <a href="#layer-order">Layer Order</a>
+                <a href="#layer-lock">Lock Layers</a>
+                <a href="#layer-hide">Hide Layers</a>
+                <a href="#layer-groups">Layer Groups</a>
+                <a href="#layer-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Typography</summary>
+                <a href="#type-tool">Type Tool</a>
+                <a href="#character-panel">Character Panel</a>
+                <a href="#paragraph-panel">Paragraph Panel</a>
+                <a href="#font-family">Font Family</a>
+                <a href="#font-size">Font Size</a>
+                <a href="#tracking">Tracking</a>
+                <a href="#kerning">Kerning</a>
+                <a href="#leading">Leading</a>
+                <a href="#text-on-path">Text on a Path</a>
+                <a href="#area-type">Area Type</a>
+                <a href="#type-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Text Effects</summary>
+                <a href="#text-outline">Create Outlines</a>
+                <a href="#warp-text">Warp Text</a>
+                <a href="#text-transform">Transform Text</a>
+                <a href="#text-effects">Text Effects</a>
+                <a href="#text-exercises-advanced">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Brushes</summary>
+                <a href="#brushes">Brushes</a>
+                <a href="#paintbrush">Paintbrush Tool</a>
+                <a href="#blob-brush">Blob Brush</a>
+                <a href="#calligraphic-brush">Calligraphic Brush</a>
+                <a href="#art-brush">Art Brush</a>
+                <a href="#pattern-brush">Pattern Brush</a>
+                <a href="#scatter-brush">Scatter Brush</a>
+                <a href="#brush-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Pencil Tools</summary>
+                <a href="#pencil-tool">Pencil Tool</a>
+                <a href="#smooth-tool">Smooth Tool</a>
+                <a href="#join-tool">Join Tool</a>
+                <a href="#path-eraser">Path Eraser</a>
+                <a href="#pencil-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Transform</summary>
+                <a href="#move">Move</a>
+                <a href="#rotate">Rotate</a>
+                <a href="#reflect">Reflect</a>
+                <a href="#scale">Scale</a>
+                <a href="#shear">Shear</a>
+                <a href="#transform-panel">Transform Panel</a>
+                <a href="#transform-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Align & Distribute</summary>
+                <a href="#align">Align</a>
+                <a href="#horizontal-align">Horizontal Align</a>
+                <a href="#vertical-align">Vertical Align</a>
+                <a href="#distribute">Distribute</a>
+                <a href="#smart-guides">Smart Guides</a>
+                <a href="#align-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Appearance</summary>
+                <a href="#appearance">Appearance Panel</a>
+                <a href="#multiple-fills">Multiple Fills</a>
+                <a href="#multiple-strokes">Multiple Strokes</a>
+                <a href="#opacity">Opacity</a>
+                <a href="#blend-modes">Blend Modes</a>
+                <a href="#appearance-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Effects</summary>
+                <a href="#effects">Effects</a>
+                <a href="#drop-shadow">Drop Shadow</a>
+                <a href="#blur">Blur</a>
+                <a href="#distort">Distort</a>
+                <a href="#stylize">Stylize</a>
+                <a href="#warp-effects">Warp Effects</a>
+                <a href="#effect-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Clipping Masks</summary>
+                <a href="#clipping-mask">Clipping Mask</a>
+                <a href="#create-clipping-mask">Create Mask</a>
+                <a href="#edit-clipping-mask">Edit Mask</a>
+                <a href="#release-mask">Release Mask</a>
+                <a href="#opacity-mask">Opacity Mask</a>
+                <a href="#mask-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Image Tracing</summary>
+                <a href="#image-trace">Image Trace</a>
+                <a href="#black-white-trace">Black & White Trace</a>
+                <a href="#color-trace">Color Trace</a>
+                <a href="#trace-settings">Trace Settings</a>
+                <a href="#expand-trace">Expand Trace</a>
+                <a href="#trace-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Perspective</summary>
+                <a href="#perspective-grid">Perspective Grid</a>
+                <a href="#perspective-selection">Perspective Selection</a>
+                <a href="#one-point-perspective">One-Point Perspective</a>
+                <a href="#two-point-perspective">Two-Point Perspective</a>
+                <a href="#perspective-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator 3D</summary>
+                <a href="#3d">3D Design</a>
+                <a href="#3d-extrude">Extrude</a>
+                <a href="#3d-revolve">Revolve</a>
+                <a href="#3d-materials">Materials</a>
+                <a href="#3d-lighting">Lighting</a>
+                <a href="#3d-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Logos</summary>
+                <a href="#logo-design">Logo Design</a>
+                <a href="#logo-shapes">Logo Shapes</a>
+                <a href="#logo-grids">Logo Grids</a>
+                <a href="#logo-typography">Logo Typography</a>
+                <a href="#logo-color">Logo Colors</a>
+                <a href="#logo-construction">Logo Construction</a>
+                <a href="#logo-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Illustrations</summary>
+                <a href="#digital-illustration">Digital Illustration</a>
+                <a href="#flat-illustration">Flat Illustration</a>
+                <a href="#character-design">Character Design</a>
+                <a href="#icon-design">Icon Design</a>
+                <a href="#isometric-design">Isometric Design</a>
+                <a href="#illustration-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Patterns</summary>
+                <a href="#patterns">Patterns</a>
+                <a href="#pattern-tool">Pattern Tool</a>
+                <a href="#seamless-patterns">Seamless Patterns</a>
+                <a href="#pattern-swatches">Pattern Swatches</a>
+                <a href="#pattern-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Advanced</summary>
+                <a href="#compound-paths">Compound Paths</a>
+                <a href="#compound-shapes">Compound Shapes</a>
+                <a href="#blend-tool">Blend Tool</a>
+                <a href="#gradient-mesh">Gradient Mesh</a>
+                <a href="#envelope-distort">Envelope Distort</a>
+                <a href="#live-paint">Live Paint</a>
+                <a href="#advanced-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Print Design</summary>
+                <a href="#print-design">Print Design</a>
+                <a href="#business-card">Business Cards</a>
+                <a href="#flyer-design">Flyer Design</a>
+                <a href="#brochure-design">Brochure Design</a>
+                <a href="#poster-design">Poster Design</a>
+                <a href="#packaging-design">Packaging Design</a>
+                <a href="#print-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Web Design</summary>
+                <a href="#web-graphics">Web Graphics</a>
+                <a href="#social-media">Social Media Graphics</a>
+                <a href="#web-banners">Web Banners</a>
+                <a href="#ui-icons">UI Icons</a>
+                <a href="#responsive-assets">Responsive Assets</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Export</summary>
+                <a href="#file-formats">File Formats</a>
+                <a href="#ai">AI</a>
+                <a href="#svg">SVG</a>
+                <a href="#eps">EPS</a>
+                <a href="#pdf">PDF</a>
+                <a href="#png">PNG</a>
+                <a href="#jpeg">JPEG</a>
+                <a href="#export-for-web">Export for Web</a>
+                <a href="#export-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>Illustrator Shortcuts</summary>
+                <a href="#keyboard-shortcuts">Keyboard Shortcuts</a>
+                <a href="#tool-shortcuts">Tool Shortcuts</a>
+                <a href="#layer-shortcuts">Layer Shortcuts</a>
+                <a href="#selection-shortcuts">Selection Shortcuts</a>
+                <a href="#shortcut-exercises">Exercises</a>
+            </details>
+
+            <a href="#project">Illustrator Project</a>
+            <a href="#certificate">Illustrator Certificate</a>
+            <a href="#examples">Illustrator Examples</a>
+            <a href="#references">Illustrator References</a>
+        </aside>
+
+        <section class="course-main" id="home">
+            <h1>Illustrator Tutorial</h1>
+
+            <p>
+                Adobe Illustrator is a vector graphics application used to
+                create logos, icons, illustrations, typography, diagrams,
+                posters, packaging, and other scalable artwork.
+            </p>
+
+            <h2>Learning by Examples</h2>
+
+            <p>
+                Learn through practical examples using Illustrator's
+                selection tools, shapes, Pen Tool, paths, colors, gradients,
+                typography, brushes, masks, effects, and vector design tools.
+            </p>
+
+            <div class="w3-example">
+                <h3>Example</h3>
+
+                <div class="w3-code notranslate illustratorHigh">
+                    <span class="commentcolor" style="color:slategray">
+                        # Illustrator Example
+                    </span><br><br>
+
+                    <span class="propertycolor" style="color:#005cc5">
+                        Document
+                    </span>:
+                    <span class="valuecolor" style="color:#008000">
+                        1920 × 1080 px
+                    </span><br>
+
+                    <span class="propertycolor" style="color:#005cc5">
+                        Color Mode
+                    </span>:
+                    <span class="valuecolor" style="color:#008000">
+                        RGB
+                    </span><br>
+
+                    <span class="propertycolor" style="color:#005cc5">
+                        Artwork
+                    </span>:
+                    <span class="valuecolor" style="color:#008000">
+                        Vector
+                    </span><br>
+
+                    <span class="propertycolor" style="color:#005cc5">
+                        Output
+                    </span>:
+                    <span class="valuecolor" style="color:#008000">
+                        SVG / PDF / PNG
+                    </span><br><br>
+
+                    <span class="commentcolor" style="color:slategray">
+                        # Create shapes → Combine paths → Apply colors
+                    </span><br>
+
+                    <span class="commentcolor" style="color:slategray">
+                        # Add typography → Align artwork → Export
+                    </span>
+                </div>
+
+                <a class="w3-btn w3-margin-bottom" href="#illustrator-example" target="_blank" rel="noopener">
+                    Try it Yourself »
+                </a>
+            </div>
+
+            <div class="course-card">
+                <h2>Learn Illustrator</h2>
+
+                <p>
+                    Start with the Illustrator workspace and essential tools,
+                    then learn shapes, selections, the Pen Tool, paths, colors,
+                    gradients, typography, brushes, layers, masks, effects,
+                    image tracing, perspective, 3D, logo design, illustration,
+                    print design, web graphics, and professional vector export.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-quick-links" aria-label="Footer shortcuts"><a class="footer-logo" href="../index.html"
+                aria-label="W3Schools home"><i class="fa-solid fa-code" aria-hidden="true"></i></a><a
+                href="#plus">PLUS</a><a href="#spaces">SPACES</a><a href="#certified">GET CERTIFIED</a><a
+                href="#teachers">FOR TEACHERS</a><a href="#practice">PRACTICE</a><a
+                href="mailto:help@w3schools.com">CONTACT US</a></div>
+        <div class="footer-columns">
+            <section class="footer-column">
+                <h2>Top Tutorials</h2><a href="../HTML/html.html">HTML Tutorial</a><a href="../CSS/css.html">CSS
+                    Tutorial</a><a href="../Js/js.html">JavaScript Tutorial</a><a href="../Ps/ps.html">PhotoShop
+                    Tutorial</a><a href="../Ai/ai.html">Illustrator Tutorial</a><a href="#jquery">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Top References</h2><a href="#html-references">HTML Tutorial</a><a href="#css-references">CSS
+                    Tutorial</a><a href="#javascript-references">JavaScript Tutorial</a><a
+                    href="#photoshop-references">PhotoShop Tutorial</a><a href="#illustrator-references">Illustrator
+                    Tutorial</a><a href="#jquery-references">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Top Examples</h2><a href="#html-examples">HTML Tutorial</a><a href="#css-examples">CSS
+                    Tutorial</a><a href="#javascript-examples">JavaScript Tutorial</a><a
+                    href="#photoshop-examples">PhotoShop Tutorial</a><a href="#illustrator-examples">Illustrator
+                    Tutorial</a><a href="#jquery-examples">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Get Certified</h2><a href="#html-certificate">HTML Certificate</a><a href="#css-certificate">CSS
+                    Certificate</a><a href="#javascript-certificate">JavaScript Certificate</a><a
+                    href="#photoshop-certificate">PhotoShop Certificate</a><a
+                    href="#illustrator-certificate">Illustrator Certificate</a><a href="#jquery-certificate">JQuery
+                    Certificate</a>
+            </section>
+        </div>
+        <div class="footer-social">
+            <div class="social-icons"><a href="https://www.youtube.com/@w3schools" target="_blank" rel="noopener"
+                    aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a
+                    href="https://www.linkedin.com/company/w3schools.com/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a
+                    href="https://discord.com/invite/w3schools" target="_blank" rel="noopener" aria-label="Discord"><i
+                        class="fa-brands fa-discord"></i></a><a href="https://www.facebook.com/w3schoolscom/"
+                    target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a
+                    href="https://www.instagram.com/w3schools.com_official/" target="_blank" rel="noopener"
+                    aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="footer-social-links"><a href="#forum">FORUM</a><a href="#about">ABOUT</a><a
+                    href="#academy">ACADEMY</a></div>
+        </div>
+        <div class="footer-text">
+            <p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading and
+                learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot
+                warrant full correctness of all content.</p>
+            <p>While using W3Schools, you agree to have read and accepted our <a href="#terms">terms of use</a>, <a
+                    href="#cookies">cookies</a> and <a href="#privacy">privacy policy</a>.</p>
+            <p><a href="#copyright">Copyright 1999-2026</a> by Refsnes Data. All Rights Reserved. W3Schools is Powered
+                by W3.CSS.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

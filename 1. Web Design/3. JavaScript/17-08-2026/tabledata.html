@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabular Data</title>
+    <style>
+        * {
+            font-family: 'poppins', sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tr,
+        td,
+        th {
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h2>Fill the form and Submit</h2>
+        <table>
+            <tr>
+                <td>
+                    <label>Name: </label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Name here..." id="name" maxlength="20" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>EMail: </label>
+                </td>
+                <td>
+                    <input type="email" id="email" placeholder="Email here..." required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Phone No.:</label>
+                </td>
+                <td>
+                    <input type="tel" id="tel" placeholder="Phone number here..." required>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="saveForm()">Click to Save Data</button>
+                    <button onclick="submitForm()">Click to Send Data</button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+    <br>
+    <hr><br>
+    <h2>
+        Saved Data
+    </h2>
+
+    <table id="table">
+        <tr>
+            <th>Sr. No.</th>
+            <th>Name</th>
+            <th>EMail</th>
+            <th>Phone No.</th>
+        </tr>
+    </table>
+
+    <script src="./script.js">
+        
+    </script>
+</body>
+
+</html>

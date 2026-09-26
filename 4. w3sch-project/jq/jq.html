@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Tutorial | W3Schools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-main">
+            <a class="logo" href="../index.html" aria-label="W3Schools home">W<sup>3</sup>Schools</a>
+            <label class="search-box">
+                <span class="sr-only">Search</span>
+                <input type="search" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+            </label>
+            <a class="header-link" href="#login">Log in</a>
+        </div>
+
+        <nav class="topnavcontainer" aria-label="Tutorial categories">
+            <div class="topnav" id="subtopnav">
+                <a href="../HTML/html.html">HTML</a>
+                <a href="../CSS/css.html">CSS</a>
+                <a href="../Js/js.html">JavaScript</a>
+                <a href="../Ps/ps.html">PhotoShop</a>
+                <a href="../Ai/ai.html">Illustrator</a>
+                <a class="active" href="./jq.html">JQuery</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="course-page">
+        <aside class="course-sidebar" aria-label="jQuery tutorial navigation">
+            <h2><span>jQuery</span> Tutorial</h2>
+
+            <a class="active" href="#home">JQUERY HOME</a>
+
+            <details class="sidebar-group" open>
+                <summary>jQuery Introduction</summary>
+                <a href="#introduction">Introduction</a>
+                <a href="#getting-started">Getting Started</a>
+                <a href="#syntax">Syntax</a>
+                <a href="#selectors">Selectors</a>
+                <a href="#events">Events</a>
+                <a href="#exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Basics</summary>
+                <a href="#download">Download jQuery</a>
+                <a href="#cdn">jQuery CDN</a>
+                <a href="#document-ready">Document Ready</a>
+                <a href="#no-conflict">noConflict()</a>
+                <a href="#basics-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Selectors</summary>
+                <a href="#element-selectors">Element Selectors</a>
+                <a href="#id-selectors">ID Selectors</a>
+                <a href="#class-selectors">Class Selectors</a>
+                <a href="#attribute-selectors">Attribute Selectors</a>
+                <a href="#descendant-selectors">Descendant Selectors</a>
+                <a href="#child-selectors">Child Selectors</a>
+                <a href="#first-last-selectors">First and Last</a>
+                <a href="#eq-selector">eq()</a>
+                <a href="#filter-selector">filter()</a>
+                <a href="#not-selector">not()</a>
+                <a href="#selector-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Events</summary>
+                <a href="#event-methods">Event Methods</a>
+                <a href="#click">click()</a>
+                <a href="#dblclick">dblclick()</a>
+                <a href="#mouseenter">mouseenter()</a>
+                <a href="#mouseleave">mouseleave()</a>
+                <a href="#mousedown">mousedown()</a>
+                <a href="#mouseup">mouseup()</a>
+                <a href="#hover">hover()</a>
+                <a href="#focus">focus()</a>
+                <a href="#blur">blur()</a>
+                <a href="#keydown">keydown()</a>
+                <a href="#keyup">keyup()</a>
+                <a href="#submit">submit()</a>
+                <a href="#change">change()</a>
+                <a href="#event-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Effects</summary>
+                <a href="#hide-show">Hide and Show</a>
+                <a href="#fade">Fade</a>
+                <a href="#fade-in">fadeIn()</a>
+                <a href="#fade-out">fadeOut()</a>
+                <a href="#fade-toggle">fadeToggle()</a>
+                <a href="#fade-to">fadeTo()</a>
+                <a href="#slide">Slide</a>
+                <a href="#slide-down">slideDown()</a>
+                <a href="#slide-up">slideUp()</a>
+                <a href="#slide-toggle">slideToggle()</a>
+                <a href="#animate">animate()</a>
+                <a href="#stop">stop()</a>
+                <a href="#effect-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery HTML</summary>
+                <a href="#get-content">Get Content</a>
+                <a href="#text">text()</a>
+                <a href="#html">html()</a>
+                <a href="#val">val()</a>
+                <a href="#attr">attr()</a>
+                <a href="#set-content">Set Content</a>
+                <a href="#html-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery DOM</summary>
+                <a href="#add-elements">Add Elements</a>
+                <a href="#append">append()</a>
+                <a href="#prepend">prepend()</a>
+                <a href="#after">after()</a>
+                <a href="#before">before()</a>
+                <a href="#remove-elements">Remove Elements</a>
+                <a href="#remove">remove()</a>
+                <a href="#empty">empty()</a>
+                <a href="#replace">replaceWith()</a>
+                <a href="#clone">clone()</a>
+                <a href="#dom-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery CSS</summary>
+                <a href="#css">CSS Methods</a>
+                <a href="#css-property">Get CSS Property</a>
+                <a href="#css-set">Set CSS Property</a>
+                <a href="#add-class">addClass()</a>
+                <a href="#remove-class">removeClass()</a>
+                <a href="#toggle-class">toggleClass()</a>
+                <a href="#has-class">hasClass()</a>
+                <a href="#css-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Dimensions</summary>
+                <a href="#dimensions">Dimensions</a>
+                <a href="#width">width()</a>
+                <a href="#height">height()</a>
+                <a href="#inner-width">innerWidth()</a>
+                <a href="#inner-height">innerHeight()</a>
+                <a href="#outer-width">outerWidth()</a>
+                <a href="#outer-height">outerHeight()</a>
+                <a href="#dimension-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Traversing</summary>
+                <a href="#traversing">Traversing</a>
+                <a href="#parent">parent()</a>
+                <a href="#parents">parents()</a>
+                <a href="#parents-until">parentsUntil()</a>
+                <a href="#children">children()</a>
+                <a href="#find">find()</a>
+                <a href="#siblings">siblings()</a>
+                <a href="#next">next()</a>
+                <a href="#prev">prev()</a>
+                <a href="#first">first()</a>
+                <a href="#last">last()</a>
+                <a href="#eq">eq()</a>
+                <a href="#filter">filter()</a>
+                <a href="#traversing-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery AJAX</summary>
+                <a href="#ajax">AJAX Introduction</a>
+                <a href="#ajax-load">load()</a>
+                <a href="#ajax-get">get()</a>
+                <a href="#ajax-post">post()</a>
+                <a href="#ajax-requests">AJAX Requests</a>
+                <a href="#ajax-response">AJAX Response</a>
+                <a href="#ajax-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery AJAX Advanced</summary>
+                <a href="#ajax-method">$.ajax()</a>
+                <a href="#ajax-options">AJAX Options</a>
+                <a href="#ajax-success">success</a>
+                <a href="#ajax-error">error</a>
+                <a href="#ajax-complete">complete</a>
+                <a href="#ajax-before-send">beforeSend</a>
+                <a href="#ajax-data">Sending Data</a>
+                <a href="#ajax-advanced-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery JSON</summary>
+                <a href="#json">JSON</a>
+                <a href="#parse-json">Parsing JSON</a>
+                <a href="#stringify-json">Stringifying JSON</a>
+                <a href="#json-ajax">JSON with AJAX</a>
+                <a href="#json-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Forms</summary>
+                <a href="#form-selectors">Form Selectors</a>
+                <a href="#form-values">Form Values</a>
+                <a href="#form-serialize">serialize()</a>
+                <a href="#form-serialize-array">serializeArray()</a>
+                <a href="#form-validation">Form Validation</a>
+                <a href="#form-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Plugins</summary>
+                <a href="#plugins">Plugins</a>
+                <a href="#plugin-installation">Installing Plugins</a>
+                <a href="#plugin-usage">Using Plugins</a>
+                <a href="#create-plugin">Creating Plugins</a>
+                <a href="#plugin-options">Plugin Options</a>
+                <a href="#plugin-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Callbacks</summary>
+                <a href="#callbacks">Callbacks</a>
+                <a href="#callback-functions">Callback Functions</a>
+                <a href="#callback-parameters">Callback Parameters</a>
+                <a href="#callback-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Chaining</summary>
+                <a href="#chaining">Method Chaining</a>
+                <a href="#chain-selectors">Chaining Selectors</a>
+                <a href="#chain-effects">Chaining Effects</a>
+                <a href="#chain-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Iteration</summary>
+                <a href="#each">each()</a>
+                <a href="#each-element">Each Element</a>
+                <a href="#each-array">Each Array</a>
+                <a href="#map">map()</a>
+                <a href="#grep">grep()</a>
+                <a href="#iteration-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Utilities</summary>
+                <a href="#utilities">Utility Methods</a>
+                <a href="#extend">extend()</a>
+                <a href="#is-array">isArray()</a>
+                <a href="#is-function">isFunction()</a>
+                <a href="#is-empty-object">isEmptyObject()</a>
+                <a href="#trim">trim()</a>
+                <a href="#utilities-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Data</summary>
+                <a href="#data">data()</a>
+                <a href="#remove-data">removeData()</a>
+                <a href="#data-attributes">Data Attributes</a>
+                <a href="#data-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Event Delegation</summary>
+                <a href="#event-delegation">Event Delegation</a>
+                <a href="#on">on()</a>
+                <a href="#off">off()</a>
+                <a href="#one">one()</a>
+                <a href="#delegate">Delegated Events</a>
+                <a href="#delegation-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Advanced</summary>
+                <a href="#deferred">Deferred Objects</a>
+                <a href="#promise">Promises</a>
+                <a href="#deferred-then">then()</a>
+                <a href="#when">when()</a>
+                <a href="#queue">Queues</a>
+                <a href="#dequeue">dequeue()</a>
+                <a href="#advanced-exercises">Exercises</a>
+            </details>
+
+            <details class="sidebar-group">
+                <summary>jQuery Modern Development</summary>
+                <a href="#jquery-with-javascript">jQuery with JavaScript</a>
+                <a href="#jquery-dom">jQuery and DOM</a>
+                <a href="#jquery-fetch">jQuery and APIs</a>
+                <a href="#jquery-async">Asynchronous jQuery</a>
+                <a href="#jquery-best-practices">Best Practices</a>
+                <a href="#jquery-performance">Performance</a>
+            </details>
+
+            <a href="#project">jQuery Project</a>
+            <a href="#certificate">jQuery Certificate</a>
+            <a href="#examples">jQuery Examples</a>
+            <a href="#references">jQuery References</a>
+        </aside>
+
+        <section class="course-main" id="home">
+            <h1>jQuery Tutorial</h1>
+
+            <p>
+                jQuery is a fast, small, and feature-rich JavaScript library.
+                It makes things like HTML document traversal and manipulation,
+                event handling, animation, and AJAX much simpler.
+            </p>
+
+            <h2>Learning by Examples</h2>
+
+            <p>
+                With our "Try it Yourself" editor, you can edit the jQuery
+                code and see the result directly in the browser:
+            </p>
+
+            <div class="w3-example">
+                <h3>Example</h3>
+
+                <div class="w3-code notranslate jqueryHigh">
+                    <span class="tagnamecolor" style="color:#905">
+                        $(document)
+                    </span>
+                    <span style="color:#999">.</span>
+                    <span class="propertycolor" style="color:#005cc5">
+                        ready
+                    </span>
+                    <span style="color:#999">(</span>
+                    <span style="color:#999">function</span>
+                    <span style="color:#999">() {</span><br>
+
+                    &nbsp;&nbsp;
+                    <span class="tagnamecolor" style="color:#905">
+                        $
+                    </span>
+                    <span style="color:#999">(</span>
+                    <span class="stringcolor" style="color:#008000">
+                        "#demo"
+                    </span>
+                    <span style="color:#999">)</span>
+                    <span style="color:#999">.</span>
+                    <span class="propertycolor" style="color:#005cc5">
+                        click
+                    </span>
+                    <span style="color:#999">(</span>
+                    <span style="color:#999">function</span>
+                    <span style="color:#999">() {</span><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="tagnamecolor" style="color:#905">
+                        $
+                    </span>
+                    <span style="color:#999">(</span>
+                    <span class="tagnamecolor" style="color:#905">
+                        this
+                    </span>
+                    <span style="color:#999">)</span>
+                    <span style="color:#999">.</span>
+                    <span class="propertycolor" style="color:#005cc5">
+                        hide
+                    </span>
+                    <span style="color:#999">();</span><br>
+
+                    &nbsp;&nbsp;
+                    <span style="color:#999">});</span><br>
+
+                    <span style="color:#999">});</span>
+                </div>
+
+                <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjquery_default" target="_blank"
+                    rel="noopener">
+                    Try it Yourself »
+                </a>
+            </div>
+
+            <div class="course-card">
+                <h2>Learn jQuery</h2>
+
+                <p>
+                    Start with selectors and events, then learn effects,
+                    HTML and CSS manipulation, DOM traversal, AJAX, JSON,
+                    forms, plugins, callbacks, chaining, iteration, utilities,
+                    promises, and advanced jQuery techniques.
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="footer-quick-links" aria-label="Footer shortcuts">
+            <a class="footer-logo" href="../index.html" aria-label="W3Schools home"><i class="fa-solid fa-code"
+                    aria-hidden="true"></i></a>
+            <a href="#plus">PLUS</a>
+            <a href="#spaces">SPACES</a>
+            <a href="#certified">GET CERTIFIED</a>
+            <a href="#teachers">FOR TEACHERS</a>
+            <a href="#practice">PRACTICE</a>
+            <a href="mailto:help@w3schools.com">CONTACT US</a>
+        </div>
+
+        <div class="footer-columns">
+            <section class="footer-column">
+                <h2>Top Tutorials</h2>
+                <a href="../HTML/html.html">HTML Tutorial</a>
+                <a href="../CSS/css.html">CSS Tutorial</a>
+                <a href="../Js/js.html">JavaScript Tutorial</a>
+                <a href="../Ps/ps.html">PhotoShop Tutorial</a>
+                <a href="../Ai/ai.html">Illustrator Tutorial</a>
+                <a href="./jq.html">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Top References</h2>
+                <a href="#html-references">HTML Tutorial</a>
+                <a href="#css-references">CSS Tutorial</a>
+                <a href="#javascript-references">JavaScript Tutorial</a>
+                <a href="#photoshop-references">PhotoShop Tutorial</a>
+                <a href="#illustrator-references">Illustrator Tutorial</a>
+                <a href="#jquery-references">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Top Examples</h2>
+                <a href="#html-examples">HTML Tutorial</a>
+                <a href="#css-examples">CSS Tutorial</a>
+                <a href="#javascript-examples">JavaScript Tutorial</a>
+                <a href="#photoshop-examples">PhotoShop Tutorial</a>
+                <a href="#illustrator-examples">Illustrator Tutorial</a>
+                <a href="#jquery-examples">JQuery Tutorial</a>
+            </section>
+            <section class="footer-column">
+                <h2>Get Certified</h2>
+                <a href="#html-certificate">HTML Certificate</a>
+                <a href="#css-certificate">CSS Certificate</a>
+                <a href="#javascript-certificate">JavaScript Certificate</a>
+                <a href="#photoshop-certificate">PhotoShop Certificate</a>
+                <a href="#illustrator-certificate">Illustrator Certificate</a>
+                <a href="#jquery-certificate">JQuery Certificate</a>
+            </section>
+        </div>
+
+        <div class="footer-social">
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@w3schools" target="_blank" rel="noopener" aria-label="YouTube"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/w3schools.com/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://discord.com/invite/w3schools" target="_blank" rel="noopener" aria-label="Discord"><i
+                        class="fa-brands fa-discord"></i></a>
+                <a href="https://www.facebook.com/w3schoolscom/" target="_blank" rel="noopener" aria-label="Facebook"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/w3schools.com_official/" target="_blank" rel="noopener"
+                    aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="footer-social-links"><a href="#forum">FORUM</a>
+                <a href="#about">ABOUT</a><a href="#academy">ACADEMY</a>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading and
+                learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot
+                warrant full correctness of all content.</p>
+            <p>While using W3Schools, you agree to have read and accepted our <a href="#terms">terms of use</a>, <a
+                    href="#cookies">cookies</a> and <a href="#privacy">privacy policy</a>.</p>
+            <p><a href="#copyright">Copyright 1999-2026</a> by Refsnes Data. All Rights Reserved. W3Schools is Powered
+                by W3.CSS.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

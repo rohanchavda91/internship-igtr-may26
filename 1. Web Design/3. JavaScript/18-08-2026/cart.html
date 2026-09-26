@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addd to card</title>
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            padding: 30px;
+        }
+
+        .product,
+        .cart {
+            background: white;
+            padding: 20px;
+            width: 280px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .cart img {
+            width: 280px;
+        }
+
+        button {
+            background: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #cartImage {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cart">
+        <h2>🛒 My Cart</h2>
+        <img src="image.png" alt="shoes">
+
+        <p id="cartName"></p>
+        <p>Quantity: <span id="cartCount">0</span></p>
+        <p>Total: ₹<span id="cartTotal">0</span></p>
+    </div>
+    <div class="product">
+        <h2>Sports Shoes</h2>
+        <p>Price: ₹1999</p>
+
+        <button onclick="addToCart()">Add To Cart</button>
+        <button onclick="removeToCart()">Remove To Cart</button>
+    </div>
+    <script>
+        let count = 0;
+        let total = 0;
+
+        function addToCart() {
+
+            count++;
+            total += 1999;
+
+
+
+            document.getElementById("cartName").innerText = "Sports Shoes";
+
+            document.getElementById("cartCount").innerText = count;
+
+            document.getElementById("cartTotal").innerText = total;
+        }
+        function removeToCart() {
+
+            if (count > 0) {
+                count--;
+                total -= 1999;
+            }
+
+            document.getElementById("cartName").innerText = "Sports Shoes";
+
+            document.getElementById("cartCount").innerText = count;
+
+            document.getElementById("cartTotal").innerText = total;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visit Casa Oliva, learn our story, and reserve a table at our Italian trattoria.">
+    <title>Contact &amp; About | Casa Oliva</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Casa Oliva home"><span
+                class="brand-mark">CO</span><span><strong>Casa Oliva</strong><small>Italian trattoria</small></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false"
+            aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Open
+                navigation</span></button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a class="nav-link"
+                href="index.html">Home</a><a class="nav-link" href="menu.html">Menu</a><a class="nav-link"
+                href="contact.html">Contact &amp; About</a><a class="button button-small nav-reserve"
+                href="#reservation">Reserve a table</a></nav>
+    </header>
+
+    <main>
+        <section class="page-hero contact-page-hero">
+            <div class="page-hero-inner reveal">
+                <p class="eyebrow">Your table is waiting</p>
+                <h1>Come say<br><em>ciao.</em></h1>
+                <p>Find us under the striped awning, where Olive Lane meets the evening.</p>
+            </div>
+        </section>
+        <section class="contact-section section-pad">
+            <div class="contact-grid">
+                <div class="contact-details reveal">
+                    <div class="section-kicker"><span>03</span><span class="rule"></span><span>Visit us</span></div>
+                    <h2>Make yourself<br><em>at home.</em></h2>
+                    <p>Whether it is a Tuesday pasta craving or a birthday worth lingering over, we will set the table.
+                    </p>
+                    <dl>
+                        <div>
+                            <dt>Address</dt>
+                            <dd>28 Olive Lane<br>Downtown, 400001</dd>
+                        </div>
+                        <div>
+                            <dt>Opening hours</dt>
+                            <dd>Tuesday–Sunday<br>12:00–23:00<br><small>Kitchen closes at 22:00</small></dd>
+                        </div>
+                        <div>
+                            <dt>Contact</dt>
+                            <dd><a href="tel:+919876543210">+91 98765 43210</a><br><a
+                                    href="mailto:ciao@casaoliva.example">ciao@casaoliva.example</a></dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="reservation-panel reveal" id="reservation">
+                    <p class="eyebrow">Reservations</p>
+                    <h2>Save us a seat?</h2>
+                    <p class="form-intro">For groups of 8 or more, please call us so we can make it special.</p>
+                    <form id="reservation-form">
+                        <div class="form-row"><label for="guest-name">Your name</label><input id="guest-name"
+                                name="name" type="text" autocomplete="name" required></div>
+                        <div class="form-row"><label for="guest-email">Email address</label><input id="guest-email"
+                                name="email" type="email" autocomplete="email" required></div>
+                        <div class="form-row split">
+                            <div><label for="guest-date">Date</label><input id="guest-date" name="date" type="date"
+                                    required></div>
+                            <div><label for="guest-guests">Guests</label><select id="guest-guests" name="guests">
+                                    <option>2 guests</option>
+                                    <option>3 guests</option>
+                                    <option>4 guests</option>
+                                    <option>5 guests</option>
+                                    <option>6 guests</option>
+                                    <option>7 guests</option>
+                                </select></div>
+                        </div>
+                        <div class="form-row"><label for="guest-note">Anything we should know?
+                                <span>(optional)</span></label><textarea id="guest-note" name="note"
+                                rows="3"></textarea></div><button class="button" type="submit">Request a table <span
+                                aria-hidden="true">&#8594;</span></button>
+                        <p class="form-message" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="about-band">
+            <div class="about-image reveal"><img
+                    src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=85"
+                    alt="Warm interior of Casa Oliva restaurant with wooden tables"></div>
+            <div class="about-copy reveal">
+                <p class="eyebrow">A small story</p>
+                <h2>Born from a kitchen full of voices.</h2>
+                <p>Casa Oliva began with a family table, a suitcase of recipes, and a belief that a restaurant should
+                    feel like being invited in. We still cook that way: with both hands, good music, and room for one
+                    more.</p>
+                <p class="signature">With love,<br><em>Lucia &amp; Matteo</em></p>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">CO</span><span><strong>Casa
+                        Oliva</strong><small>Italian trattoria</small></span></a>
+            <p>Good food. Warm light. Stay awhile.</p>
+        </div>
+        <div class="footer-details">
+            <p>28 Olive Lane, Downtown</p>
+            <p>Tue–Sun · 12:00–23:00</p>
+            <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+        </div>
+        <p class="copyright">© 2026 Casa Oliva</p>
+    </footer>
+    <button class="back-top" type="button" aria-label="Back to top">&#8593;</button>
+</body>
+
+</html>
