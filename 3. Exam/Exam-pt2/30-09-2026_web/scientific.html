@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Use trigonometry, logarithms, powers and more with the CalcSpace scientific calculator.">
+  <title>CalcSpace | Scientific Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="CalcSpace home"><span class="brand__mark"
+          aria-hidden="true">C</span>CalcSpace</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="scientific.html" aria-current="page">Scientific</a>
+        <a href="age.html">Age Calculator</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-main">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">More ways to work it out</p>
+      <h1 id="page-title">Scientific Calculator</h1>
+      <p class="hero__intro">Explore advanced functions with a clear, keyboard-friendly calculator.</p>
+    </section>
+
+    <section class="calculator-section" aria-label="Scientific calculator">
+      <div class="calculator scientific-calculator" data-calculator="scientific">
+        <div class="calculator__topline">
+          <span class="calculator__label">SCIENTIFIC</span>
+          <button class="angle-toggle" type="button" data-action="toggle-angle"
+            aria-label="Change trigonometric angle mode">DEG</button>
+        </div>
+        <output class="calculator__display" data-display aria-label="Calculator display" aria-live="polite"
+          aria-atomic="true">0</output>
+        <div class="calculator__keys calculator__keys--scientific">
+          <button class="calculator__key calculator__key--danger" type="button" data-action="clear"
+            aria-label="All clear">AC</button>
+          <button class="calculator__key" type="button" data-action="delete"
+            aria-label="Delete last character">DEL</button>
+          <button class="calculator__key calculator__key--operator" type="button" data-input="(">(</button>
+          <button class="calculator__key calculator__key--operator" type="button" data-input=")">)</button>
+          <button class="calculator__key calculator__key--operator" type="button" data-input="%">%</button>
+
+          <button class="calculator__key calculator__key--function" type="button" data-input="sin(">sin</button>
+          <button class="calculator__key calculator__key--function" type="button" data-input="cos(">cos</button>
+          <button class="calculator__key calculator__key--function" type="button" data-input="tan(">tan</button>
+          <button class="calculator__key calculator__key--function" type="button" data-input="log(">log</button>
+          <button class="calculator__key calculator__key--function" type="button" data-input="ln(">ln</button>
+
+          <button class="calculator__key calculator__key--function" type="button" data-input="sqrt(">√</button>
+          <button class="calculator__key calculator__key--function" type="button" data-input="^2">x²</button>
+          <button class="calculator__key calculator__key--function" type="button" data-input="^">xʸ</button>
+          <button class="calculator__key calculator__key--function" type="button" data-input="pi">π</button>
+          <button class="calculator__key calculator__key--function" type="button" data-input="e">e</button>
+
+          <button class="calculator__key" type="button" data-input="7">7</button>
+          <button class="calculator__key" type="button" data-input="8">8</button>
+          <button class="calculator__key" type="button" data-input="9">9</button>
+          <button class="calculator__key calculator__key--operator" type="button" data-input="/"
+            aria-label="Divide">÷</button>
+          <button class="calculator__key calculator__key--operator" type="button" data-input="*"
+            aria-label="Multiply">×</button>
+
+          <button class="calculator__key" type="button" data-input="4">4</button>
+          <button class="calculator__key" type="button" data-input="5">5</button>
+          <button class="calculator__key" type="button" data-input="6">6</button>
+          <button class="calculator__key calculator__key--operator" type="button" data-input="-"
+            aria-label="Subtract">−</button>
+          <button class="calculator__key calculator__key--operator" type="button" data-input="+"
+            aria-label="Add">+</button>
+
+          <button class="calculator__key" type="button" data-input="1">1</button>
+          <button class="calculator__key" type="button" data-input="2">2</button>
+          <button class="calculator__key" type="button" data-input="3">3</button>
+          <button class="calculator__key" type="button" data-input="0">0</button>
+          <button class="calculator__key calculator__key--equals scientific-equals" type="button" data-action="equals"
+            aria-label="Equals">=</button>
+
+          <button class="calculator__key scientific-zero" type="button" data-input="."
+            aria-label="Decimal point">.</button>
+        </div>
+      </div>
+      <p class="calculator-note">Trigonometric functions use <strong>degrees</strong> by default. Select DEG/RAD to
+        switch.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__content">
+      <div><a class="brand brand--footer" href="index.html">CalcSpace</a>
+        <p>Simple tools for everyday calculations.</p>
+      </div>
+      <p class="footer__copyright">© 2026 CalcSpace</p>
+    </div>
+  </footer>
+</body>
+
+</html>

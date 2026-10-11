@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A fast, simple calculator for everyday arithmetic.">
+  <title>CalcSpace | Everyday Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="CalcSpace home"><span class="brand__mark"
+          aria-hidden="true">C</span>CalcSpace</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="scientific.html">Scientific</a>
+        <a href="age.html">Age Calculator</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-main">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">A little clarity, by the numbers</p>
+      <h1 id="page-title">Your Everyday Calculator</h1>
+      <p class="hero__intro">Fast, simple and accurate calculations for everyday use.</p>
+    </section>
+
+    <section class="calculator-section" aria-label="Standard calculator">
+      <div class="calculator standard-calculator" data-calculator="standard">
+        <div class="calculator__topline">
+          <span class="calculator__label">STANDARD</span>
+          <span class="calculator__hint">Keyboard ready</span>
+        </div>
+        <output class="calculator__display" data-display aria-label="Calculator display" aria-live="polite"
+          aria-atomic="true">0</output>
+        <div class="calculator__keys">
+          <button class="calculator__key calculator__key--danger" type="button" data-action="clear"
+            aria-label="All clear">AC</button>
+          <button class="calculator__key" type="button" data-action="delete"
+            aria-label="Delete last character">DEL</button>
+          <button class="calculator__key calculator__key--operator" type="button" data-input="%"
+            aria-label="Percent">%</button>
+          <button class="calculator__key calculator__key--operator" type="button" data-input="/"
+            aria-label="Divide">÷</button>
+
+          <button class="calculator__key" type="button" data-input="7">7</button>
+          <button class="calculator__key" type="button" data-input="8">8</button>
+          <button class="calculator__key" type="button" data-input="9">9</button>
+          <button class="calculator__key calculator__key--operator" type="button" data-input="*"
+            aria-label="Multiply">×</button>
+
+          <button class="calculator__key" type="button" data-input="4">4</button>
+          <button class="calculator__key" type="button" data-input="5">5</button>
+          <button class="calculator__key" type="button" data-input="6">6</button>
+          <button class="calculator__key calculator__key--operator" type="button" data-input="-"
+            aria-label="Subtract">−</button>
+
+          <button class="calculator__key" type="button" data-input="1">1</button>
+          <button class="calculator__key" type="button" data-input="2">2</button>
+          <button class="calculator__key" type="button" data-input="3">3</button>
+          <button class="calculator__key calculator__key--operator" type="button" data-input="+"
+            aria-label="Add">+</button>
+
+          <button class="calculator__key calculator__key--zero" type="button" data-input="0">0</button>
+          <button class="calculator__key" type="button" data-input="." aria-label="Decimal point">.</button>
+          <button class="calculator__key calculator__key--equals" type="button" data-action="equals"
+            aria-label="Equals">=</button>
+        </div>
+      </div>
+      <p class="calculator-note">Use your keyboard, or choose a key above. Press Esc to clear.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__content">
+      <div><a class="brand brand--footer" href="index.html">CalcSpace</a>
+        <p>Simple tools for everyday calculations.</p>
+      </div>
+      <p class="footer__copyright">© 2026 CalcSpace</p>
+    </div>
+  </footer>
+</body>
+
+</html>

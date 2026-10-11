@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find your calendar age and see how much time has elapsed since your birthday.">
+  <title>CalcSpace | Age Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="CalcSpace home"><span class="brand__mark"
+          aria-hidden="true">C</span>CalcSpace</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="scientific.html">Scientific</a>
+        <a href="age.html" aria-current="page">Age Calculator</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-main">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Your time, made tangible</p>
+      <h1 id="page-title">Age Calculator</h1>
+      <p class="hero__intro">See your age in calendar years, months and days, plus your total elapsed time.</p>
+    </section>
+
+    <section class="age-layout" aria-label="Calculate your age">
+      <form class="age-calculator" novalidate>
+        <div class="age-form__heading">
+          <span class="section-icon" aria-hidden="true">✦</span>
+          <div>
+            <h2>When were you born?</h2>
+            <p>Choose your date of birth to get started.</p>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="date-of-birth">Date of birth</label>
+          <input id="date-of-birth" name="date-of-birth" type="date" required autocomplete="bday">
+        </div>
+        <button class="button button--primary age-submit" type="submit">Calculate Age <span
+            aria-hidden="true">→</span></button>
+        <p class="form-message" data-age-message role="status" aria-live="polite"></p>
+      </form>
+
+      <section class="age-results" data-age-results aria-label="Age results" hidden>
+        <div class="age-results__header">
+          <div>
+            <p class="eyebrow">Your calendar age</p>
+            <h2>Time adds up to this</h2>
+          </div>
+          <span class="live-indicator"><span aria-hidden="true"></span>Live</span>
+        </div>
+        <div class="age-result-grid age-result-grid--calendar">
+          <article class="result-card"><span class="result-card__value" data-age-years>—</span><span
+              class="result-card__label">Years</span></article>
+          <article class="result-card"><span class="result-card__value" data-age-months>—</span><span
+              class="result-card__label">Months</span></article>
+          <article class="result-card"><span class="result-card__value" data-age-days>—</span><span
+              class="result-card__label">Days</span></article>
+        </div>
+        <h3 class="results-subheading">Total elapsed time</h3>
+        <div class="age-result-grid age-result-grid--totals">
+          <article class="result-card result-card--small"><span class="result-card__value"
+              data-total-years>—</span><span class="result-card__label">Years</span></article>
+          <article class="result-card result-card--small"><span class="result-card__value"
+              data-total-months>—</span><span class="result-card__label">Months</span></article>
+          <article class="result-card result-card--small"><span class="result-card__value"
+              data-total-weeks>—</span><span class="result-card__label">Weeks</span></article>
+          <article class="result-card result-card--small"><span class="result-card__value" data-total-days>—</span><span
+              class="result-card__label">Days</span></article>
+          <article class="result-card result-card--small"><span class="result-card__value"
+              data-total-hours>—</span><span class="result-card__label">Hours</span></article>
+          <article class="result-card result-card--small"><span class="result-card__value"
+              data-total-minutes>—</span><span class="result-card__label">Minutes</span></article>
+          <button class="result-card result-card--small result-card--seconds" type="button" data-seconds-card
+            aria-label="Elapsed seconds">
+            <span class="result-card__value" data-total-seconds>—</span><span class="result-card__label">Seconds</span>
+          </button>
+          <article class="result-card result-card--small"><span class="result-card__value"
+              data-unix-seconds>—</span><span class="result-card__label">UnixTime Seconds</span></article>
+        </div>
+      </section>
+      <section class="unix-panel" data-unix-panel hidden aria-live="polite">
+        <p class="unix-panel__eyebrow">🥚 You found an Easter Egg!</p>
+        <h3>UNIX TIMESTAMP</h3>
+        <p class="unix-panel__timestamp" data-unix-timestamp></p>
+        <p class="unix-panel__description">Seconds since January 1, 1970,<br>00:00:00 UTC</p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__content">
+      <div><a class="brand brand--footer" href="index.html">CalcSpace</a>
+        <p>Simple tools for everyday calculations.</p>
+      </div>
+      <p class="footer__copyright">© 2026 CalcSpace</p>
+    </div>
+  </footer>
+</body>
+
+</html>
