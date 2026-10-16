@@ -316,11 +316,11 @@
 
             <p>
                 jQuery is a fast, small, and feature-rich JavaScript library.
-                It makes things like HTML document traversal and manipulation,
-                event handling, animation, and AJAX much simpler.
+                Use it to select HTML elements, handle events, update content
+                and styles, create effects, and make AJAX requests.
             </p>
 
-            <h2>Learning by Examples</h2>
+            <h2 id="introduction">Getting Started with jQuery</h2>
 
             <p>
                 With our "Try it Yourself" editor, you can edit the jQuery
@@ -386,14 +386,41 @@
                 </a>
             </div>
 
+            <h2 id="selectors">Selectors and Events</h2>
+            <p>
+                Selectors use familiar CSS-style patterns. Combine a selector
+                with an event method to respond to a user's action.
+            </p>
+            <div class="w3-example">
+                <h3>Hide a paragraph when it is clicked</h3>
+                <div class="w3-code notranslate jqueryHigh">
+                    $("p").on("click", function () {<br>
+                    &nbsp;&nbsp;$(this).hide();<br>
+                    });
+                </div>
+            </div>
+
+            <h2 id="html">Changing Page Content</h2>
+            <p>
+                jQuery methods can read or update an element's text, HTML,
+                attributes, and CSS. Use <code>text()</code> for plain text
+                and <code>html()</code> when working with markup.
+            </p>
+            <div class="w3-example">
+                <h3>Update an element's text</h3>
+                <div class="w3-code notranslate jqueryHigh">
+                    $("#message").text("Hello from jQuery!");
+                </div>
+            </div>
+
             <div class="course-card">
                 <h2>Learn jQuery</h2>
 
                 <p>
-                    Start with selectors and events, then learn effects,
-                    HTML and CSS manipulation, DOM traversal, AJAX, JSON,
-                    forms, plugins, callbacks, chaining, iteration, utilities,
-                    promises, and advanced jQuery techniques.
+                    Continue with effects and animations, DOM traversal,
+                    AJAX, JSON, forms, plugins, callbacks, and chaining.
+                    For new projects, also consider whether modern browser
+                    APIs can do the job without an additional library.
                 </p>
             </div>
         </section>

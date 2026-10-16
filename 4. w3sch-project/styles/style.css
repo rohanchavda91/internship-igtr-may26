@@ -625,6 +625,62 @@ body {
     line-height: 1.6;
 }
 
+.image-gallery-section {
+    margin-top: 42px;
+}
+
+.image-gallery-section h2 {
+    margin: 0 0 10px;
+    color: #20232d;
+}
+
+.image-gallery-section > p {
+    margin: 0 0 18px;
+    color: #52606b;
+    line-height: 1.6;
+}
+
+.responsive {
+    float: left;
+    width: 24.99999%;
+    padding: 0 6px;
+}
+
+.responsive.document-preview {
+    width: 49.99999%;
+}
+
+.gallery {
+    margin: 0 0 12px;
+    border: 1px solid #ccc;
+}
+
+.gallery:hover {
+    border-color: #777;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    padding: 12px;
+    background: #f1f1f1;
+    object-fit: contain;
+}
+
+.gallery .desc {
+    min-height: 56px;
+    padding: 15px;
+    color: #20232d;
+    text-align: center;
+}
+
+.clearfix::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
 .footer-text a {
     color: #fff;
     text-decoration: underline;
@@ -729,5 +785,25 @@ body {
 
     .course-main {
         padding: 38px 18px 56px;
+    }
+}
+
+@media (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+    }
+
+    .responsive.document-preview {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+
+    .gallery img {
+        height: 220px;
     }
 }
